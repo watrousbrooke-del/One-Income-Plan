@@ -1,0 +1,58 @@
+THE ONE INCOME PLAN ◆ WEBSITE CODE
+
+These 31 files are your website, exactly as it is live on oneincomeplan.com
+on October 30, 2026. They were checked line by line against the live site.
+
+You never need to touch these to run your business. They are your backup,
+and the master copy if a page ever needs rebuilding.
+
+HOW A PAGE GOES INTO SHOWIT
+1. In Showit, open the page.
+2. Click the page name, then Advanced Settings, then Custom Head HTML.
+3. Paste the whole file in, replacing what is there.
+4. Save, then Publish.
+
+The file "site-wide-head-code.html" goes in Site Settings, Integrations,
+Custom Code (head, all pages). It holds the cookie banner and the share image.
+
+MEMBER PAGES
+Every page whose address starts with /members- is locked by MemberSpace.
+Any new member page must start with members- too, or it will be public.
+
+PAGES AND THEIR ADDRESSES
+home.html                        /
+start-here.html                  /start-here
+about.html                       /about
+contact.html                     /contact
+free-resources.html              /free-resources
+opt-in.html                      /opt-in
+thank-you.html                   /thank-you
+library.html                     /library
+membership.html                  /membership
+membership-thank-you.html        /membership-thank-you
+privacy-policy.html              /privacy-policy
+terms.html                       /terms
+disclaimer.html                  /disclaimer
+affiliate-disclosure.html        /affiliate-disclosure
+404.html                         /404
+members.html                     /members
+members-quick-start.html         /members-quick-start
+members-library.html             /members-library
+members-vault.html               /members-vault
+members-vault-budget.html        /members-vault-budget
+members-vault-sinking-funds.html /members-vault-sinking-funds
+members-vault-meals.html         /members-vault-meals
+members-vault-groceries.html     /members-vault-groceries
+members-vault-home-rhythms.html  /members-vault-home-rhythms
+members-vault-mindset.html       /members-vault-mindset
+members-vault-implementation.html /members-vault-implementation
+members-circle.html              /members-circle
+members-sessions.html            /members-sessions
+members-ask-brooke.html          /members-ask-brooke
+members-this-month.html          /members-this-month
+members-account.html             /members-account
+
+FEB 1, 2027
+At the top of membership.html is the line  const OPEN = false;
+On launch day it becomes  const OPEN = true;  and the join buttons
+switch from the waitlist form to checkout.

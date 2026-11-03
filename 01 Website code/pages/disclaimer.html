@@ -1,0 +1,372 @@
+<!--
+  ============================================================
+  THE ONE INCOME PLAN  ·  DISCLAIMER
+  URL: /disclaimer
+  ============================================================
+
+  THIS IS THE MOST IMPORTANT OF THE FOUR FOR THIS BRAND.
+  The site publishes household money guidance from someone who is not
+  a licensed professional, and it quotes dollar figures. Sections 02,
+  03, 05 and 09 are what keep that honest. Do not trim them.
+
+  BEFORE THIS GOES LIVE
+  Fill the BUSINESS object in the script at the bottom. Every blank
+  on the page reads from it. Anything left empty stays visible as a
+  [PLACEHOLDER] so nothing ships half finished by accident.
+
+  This is a drafted document, not legal advice, and it has not been
+  reviewed by an attorney. Have it checked before you rely on it.
+
+  No em dashes or en dashes anywhere.
+  ============================================================
+-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Disclaimer · The One Income Plan</title>
+  <meta name="description" content="What this site is, and just as importantly, what it is not.">
+  <link rel="canonical" href="https://oneincomeplan.com/disclaimer">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&amp;family=DM+Serif+Display&amp;display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --deep-sage:#2E3E2F;--sage:#5C6E47;--warm-tan:#C28954;--warm-tan-dark:#A77246;
+      --cream:#FBF4D7;--cream-warm:#F7ECC4;--charcoal:#2A2A2A;--soft-gray:#7E867D;
+      --light-sage:#DBE3CE;--pale-tan:#EFE0C1;--white:#FFFFFF;
+      --coral:#DD6B4E;--coral-deep:#C25441;--coral-soft:#F7D0BE;--coral-blush:#FBE3D5;
+      --gold:#D4A83F;--gold-soft:#EDD98D;--gold-deep:#B8912E;
+      --ease:cubic-bezier(.22,.61,.36,1);
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    html{font-size:17px;scroll-behavior:smooth;}
+    @media(min-width:720px){html{font-size:18px;}}
+    body{font-family:Georgia,'Times New Roman',serif;font-size:1.04rem;line-height:1.75;
+      color:var(--charcoal);background:var(--cream);-webkit-font-smoothing:antialiased;overflow-x:hidden;}
+    .container{max-width:1240px;margin:0 auto;padding:0 1.5rem;}
+    .doc{max-width:52rem;margin:0 auto;padding:0 1.5rem;}
+    h1,h2,h3{font-family:Georgia,serif;color:var(--deep-sage);}
+    .script{font-family:'Caveat',cursive;font-weight:700;}
+    a{color:var(--coral-deep);}
+
+    /* nav, same as the public pages */
+    .nav{background:rgba(251,244,215,.95);border-bottom:1px solid rgba(194,137,84,.18);
+      position:sticky;top:0;z-index:100;backdrop-filter:blur(10px);}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;padding:1.1rem 1.5rem;
+      max-width:1280px;margin:0 auto;position:relative;}
+    .nav-logo{font-size:1.3rem;font-weight:bold;color:var(--deep-sage);letter-spacing:.03em;
+      text-decoration:none;line-height:1;display:flex;align-items:baseline;gap:.5rem;}
+    .nav-logo .dot{width:8px;height:8px;border-radius:50%;background:var(--coral);display:inline-block;}
+    .nav-logo em{display:block;font-family:'Caveat',cursive;font-weight:500;font-style:normal;
+      color:var(--coral-deep);font-size:.95rem;margin-top:-2px;}
+    .nav-links{display:flex;gap:1.6rem;align-items:center;}
+    .nav-links a{font-size:.95rem;color:var(--deep-sage);text-decoration:none;position:relative;
+      white-space:nowrap;transition:color .2s var(--ease);}
+    .nav-links a:not(.nav-cta):hover{color:var(--coral-deep);}
+    .nav-cta{background:var(--coral);color:#fff!important;padding:.6rem 1.25rem;border-radius:999px;
+      font-size:.85rem!important;font-weight:bold;letter-spacing:.04em;box-shadow:0 3px 0 var(--coral-deep);
+      transition:all .25s var(--ease);}
+    .nav-cta:hover{background:var(--coral-deep);transform:translateY(-1px);}
+    .nav-toggle{display:none;background:none;border:none;width:44px;height:44px;cursor:pointer;
+      flex-direction:column;align-items:center;justify-content:center;gap:5px;}
+    .nav-toggle span{display:block;width:24px;height:2px;background:var(--deep-sage);border-radius:2px;
+      transition:transform .28s var(--ease),opacity .2s var(--ease);}
+    .nav-toggle.open span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+    .nav-toggle.open span:nth-child(2){opacity:0;}
+    .nav-toggle.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+    @media(max-width:1000px){
+      .nav-toggle{display:flex;}
+      .nav-links{position:absolute;top:100%;left:0;right:0;background:var(--cream);flex-direction:column;
+        align-items:stretch;gap:0;padding:0 1.5rem;max-height:0;overflow:hidden;
+        transition:max-height .35s var(--ease),padding .35s var(--ease);
+        border-bottom:1px solid rgba(194,137,84,.18);box-shadow:0 18px 40px rgba(46,62,47,.08);}
+      .nav-links.open{max-height:560px;padding-bottom:1.5rem;}
+      .nav-links a{padding:.95rem 0;border-bottom:1px solid rgba(194,137,84,.15);font-size:1.05rem;}
+      .nav-cta{text-align:center;margin-top:1.1rem;border-bottom:none;padding:.9rem 1.25rem;}
+    }
+
+    /* header */
+    .legal-hero{background:var(--cream);padding:3.5rem 0 2.5rem;position:relative;overflow:hidden;}
+    .legal-hero::before{content:"";position:absolute;top:-190px;right:-150px;width:500px;height:500px;
+      background:radial-gradient(circle,var(--coral-blush)0%,transparent 65%);opacity:.7;pointer-events:none;}
+    .legal-hero .doc{position:relative;z-index:2;}
+    .legal-kicker{font-size:.76rem;font-weight:bold;letter-spacing:.2em;text-transform:uppercase;
+      color:var(--coral-deep);display:inline-flex;align-items:center;gap:.7rem;margin-bottom:.9rem;}
+    .legal-kicker::before{content:"";width:28px;height:1px;background:var(--coral);display:inline-block;}
+    .legal-hero h1{font-size:clamp(2rem,5vw,3.1rem);line-height:1.06;letter-spacing:-.02em;margin-bottom:1rem;}
+    .legal-lead{font-size:1.1rem;font-style:italic;color:var(--sage);}
+    .dates{margin-top:1.5rem;padding-top:1.25rem;border-top:1px solid rgba(194,137,84,.3);
+      font-size:.9rem;color:var(--soft-gray);}
+    .dates b{color:var(--deep-sage);}
+
+    /* body */
+    .legal-body{background:var(--white);padding:3rem 0 4rem;}
+    .toc{background:var(--cream);border-radius:12px;padding:1.6rem 1.85rem;margin-bottom:2.75rem;
+      border-left:5px solid var(--coral);}
+    .toc h2{font-size:.78rem;font-weight:bold;letter-spacing:.18em;text-transform:uppercase;
+      color:var(--coral-deep);margin-bottom:.9rem;}
+    .toc ol{list-style:none;counter-reset:toc;columns:2;column-gap:2rem;}
+    @media(max-width:640px){.toc ol{columns:1;}}
+    .toc li{counter-increment:toc;padding:.28rem 0 .28rem 1.9rem;position:relative;font-size:.95rem;
+      break-inside:avoid;}
+    .toc li::before{content:counter(toc,decimal-leading-zero);position:absolute;left:0;
+      font-family:'DM Serif Display',Georgia,serif;font-size:.85rem;color:var(--warm-tan);}
+    .toc a{text-decoration:none;color:var(--deep-sage);}
+    .toc a:hover{color:var(--coral-deep);text-decoration:underline;}
+
+    section.s{margin-bottom:2.5rem;scroll-margin-top:6rem;}
+    section.s > h2{font-size:1.32rem;line-height:1.3;margin-bottom:.85rem;
+      padding-bottom:.5rem;border-bottom:2px solid var(--pale-tan);}
+    section.s > h2 .num{font-family:'DM Serif Display',Georgia,serif;color:var(--coral-deep);
+      margin-right:.6rem;}
+    section.s h3{font-size:1.05rem;margin:1.4rem 0 .5rem;color:var(--sage);}
+    section.s p{margin-bottom:1rem;}
+    section.s ul{margin:0 0 1rem;list-style:none;}
+    section.s ul li{padding:.32rem 0 .32rem 1.6rem;position:relative;}
+    section.s ul li::before{content:"\25C6";position:absolute;left:0;top:.5rem;color:var(--coral);
+      font-size:.6rem;}
+    section.s strong{color:var(--deep-sage);}
+
+    .callout{background:var(--coral-blush);border-radius:12px;padding:1.4rem 1.7rem;margin:1.5rem 0;
+      border-left:5px solid var(--coral);}
+    .callout p{margin-bottom:.6rem;}
+    .callout p:last-child{margin-bottom:0;}
+    .callout b{color:var(--coral-deep);}
+    .hard{background:var(--deep-sage);color:var(--cream);border-radius:12px;padding:1.6rem 1.85rem;
+      margin:1.75rem 0;}
+    .hard h3{color:var(--gold-soft);margin:0 0 .6rem;font-size:1rem;letter-spacing:.06em;
+      text-transform:uppercase;}
+    .hard p{margin-bottom:.7rem;}
+    .hard p:last-child{margin-bottom:0;}
+
+    table.t{width:100%;border-collapse:collapse;margin:1.1rem 0 1.4rem;font-size:.95rem;}
+    table.t th{text-align:left;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;
+      color:var(--coral-deep);padding:.55rem .7rem;border-bottom:2px solid var(--pale-tan);}
+    table.t td{padding:.6rem .7rem;border-bottom:1px solid rgba(46,62,47,.09);vertical-align:top;}
+    table.t tr:last-child td{border-bottom:none;}
+
+    /* cross links */
+    .legal-nav{background:var(--light-sage);padding:2.75rem 0;}
+    .legal-nav h2{text-align:center;font-size:1.15rem;margin-bottom:1.5rem;}
+    .legal-nav-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;max-width:60rem;margin:0 auto;}
+    @media(max-width:820px){.legal-nav-grid{grid-template-columns:repeat(2,1fr);}}
+    @media(max-width:460px){.legal-nav-grid{grid-template-columns:1fr;}}
+    .legal-nav-grid a{background:var(--white);border-radius:10px;padding:1.1rem 1.15rem;text-decoration:none;
+      display:block;border:1px solid rgba(221,107,78,.18);transition:all .25s var(--ease);}
+    .legal-nav-grid a:hover{transform:translateY(-4px);box-shadow:0 16px 32px rgba(46,62,47,.1);}
+    .legal-nav-grid a.here{background:var(--cream-warm);border-color:var(--coral);}
+    .legal-nav-grid b{display:block;color:var(--deep-sage);font-size:.99rem;margin-bottom:.2rem;}
+    .legal-nav-grid span{font-size:.84rem;color:var(--sage);font-style:italic;}
+
+    footer{background:var(--deep-sage);color:var(--cream);padding:3.5rem 0 2rem;text-align:center;}
+    footer .brand-line{font-family:'DM Serif Display',Georgia,serif;font-size:1.8rem;color:var(--cream);
+      text-decoration:none;display:inline-block;}
+    footer .tagline{font-family:'Caveat',cursive;color:var(--coral-soft);font-size:1.35rem;margin:.4rem 0 2rem;}
+    footer .footer-nav{display:flex;justify-content:center;flex-wrap:wrap;gap:1.25rem 2rem;margin:2rem 0;
+      padding-top:2rem;border-top:1px solid rgba(221,107,78,.2);}
+    footer .footer-nav a{color:var(--cream);opacity:.85;text-decoration:none;font-size:.95rem;}
+    footer .footer-nav a:hover{opacity:1;color:var(--coral-soft);}
+    footer .legal{padding-top:1rem;margin-top:1.25rem;border-top:1px solid rgba(221,107,78,.12);
+      font-size:.82rem;opacity:.65;}
+    footer .legal a{color:var(--cream);opacity:.8;text-decoration:none;margin:0 .4rem;}
+
+    @media(prefers-reduced-motion:reduce){*{transition-duration:.01ms!important;}}
+    :focus-visible{outline:3px solid var(--coral);outline-offset:3px;}
+</style>
+
+
+
+  <nav class="nav" aria-label="Main">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo"><span class="dot"></span>The One Income Plan<em>&nbsp;by Frugal Home Lover</em></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a href="/" class="nav-home" aria-label="Home" style="display:inline-flex;align-items:center;"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5"></path><path d="M5 9.5V21h14V9.5"></path></svg></a>
+        <a href="/start-here">Start Here</a>
+        <a href="/about">About</a>
+        <a href="/free-resources">Free Resources</a>
+        <a href="/membership">Membership</a>
+        <a href="/blog">Blog</a>
+        <a href="/contact">Contact</a>
+        <a href="/opt-in" class="nav-cta">Free Reality Check</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="legal-hero">
+    <div class="doc">
+      <img src="https://raw.githubusercontent.com/genasbury12/blb-site/claude/brookes-images-folder-sf3xp4/brooke-site-images/legal-note.jpg" alt="Brooke at her kitchen table" loading="lazy" style="width:96px;height:96px;border-radius:50%;object-fit:cover;display:block;margin:0 0 1.25rem;border:3px solid rgba(212,168,63,.6);box-shadow:0 10px 26px rgba(46,62,47,.2);">
+      <span class="legal-kicker">Please read this one</span>
+      <h1>Disclaimer</h1>
+      <p class="legal-lead">What this site is, and just as importantly, what it is not.</p>
+      <p class="dates">
+        <b>Effective</b> <span data-legal="effective">August 12, 2026</span>
+        &nbsp;◆&nbsp;
+        <b>Last updated</b> <span data-legal="updated">August 12, 2026</span>
+      </p>
+    </div>
+  </section>
+
+  <div class="legal-body">
+    <div class="doc">
+            <div class="callout" style="background:var(--coral-blush);border-radius:12px;padding:1.6rem 1.85rem;margin-bottom:2rem;border:1px solid rgba(221,107,78,.25);">
+        <p style="font-family:'Caveat',cursive;font-size:1.45rem;color:var(--coral-deep);margin-bottom:.5rem;">the short version, first</p>
+        <p>I am not a financial advisor. I am a wife and a mom who learned to manage money on one income the hard way, and everything I share here comes from my own real life, not from a licence or a certification.</p><p>What you find on this site is education and encouragement. It is not professional advice, and it is not a promise about what will happen in your household. Your money is yours, your decisions are yours, and the results are yours too.</p><p>Here is the longer version, because it protects both of us.</p>
+      </div>
+      <nav class="toc" aria-label="On this page">
+        <h2>On this page</h2>
+        <ol>
+        <li><a href="#s1">Not professional advice</a></li>
+        <li><a href="#s2">Not a licensed professional</a></li>
+        <li><a href="#s3">What we cover</a></li>
+        <li><a href="#s4">Your decisions are your own</a></li>
+        <li><a href="#s5">No guarantee of results</a></li>
+        <li><a href="#s6">Testimonials and success stories</a></li>
+        <li><a href="#s7">Affiliate links and commissions</a></li>
+        <li><a href="#s8">Sponsorships, gifts, and ads</a></li>
+        <li><a href="#s9">A note on faith</a></li>
+        <li><a href="#s10">Tools and downloads</a></li>
+        <li><a href="#s11">Links to other sites</a></li>
+        <li><a href="#s12">Accuracy and updates</a></li>
+        <li><a href="#s13">Limitation of liability</a></li>
+        <li><a href="#s14">Questions</a></li>
+        </ol>
+      </nav>
+      <section class="s" id="s1">
+        <h2><span class="num">01</span>Not professional advice</h2>
+        <p>The content on The One Income Plan, including blog posts, emails, printables, worksheets, trackers, courses, membership resources, and community conversation, is educational and informational personal finance content based on personal experience.</p>
+        <p>It is <strong>not</strong> financial, investment, legal, tax, accounting, or other professional advice, and it is not tailored to your situation. Nothing here creates a professional or advisory relationship between you and The One Income Plan.</p>
+      </section>
+      <section class="s" id="s2">
+        <h2><span class="num">02</span>Not a licensed professional</h2>
+        <p>Brooke Michelle Watrous is not a licensed financial advisor, certified financial planner, CPA, accountant, attorney, or credentialed financial professional of any kind. She holds no licence, registration, or certification in financial services.</p>
+        <p>Before you make any significant financial decision, please talk to a licensed professional who can look at your actual numbers. That includes decisions about debt, credit, taxes, insurance, investing, retirement, and anything that touches your family's long term security. A good advisor is worth the appointment.</p>
+      </section>
+      <section class="s" id="s3">
+        <h2><span class="num">03</span>What we cover</h2>
+        <p>The One Income Plan covers budgeting, debt payoff, saving, and frugal living for families managing on one income.</p>
+        <p>We do not currently recommend or endorse specific financial products, credit cards, banks, budgeting apps, or investing platforms. Where a tool is mentioned, it is described, not prescribed. Do your own research before you sign up for anything.</p>
+      </section>
+      <section class="s" id="s4">
+        <h2><span class="num">04</span>Your decisions are your own</h2>
+        <p>You are solely responsible for your own financial choices and their outcomes. Any action you take based on something you read, watched, or downloaded here, you take at your own risk.</p>
+        <p>The One Income Plan is not responsible for how you apply the information we share, or for any loss, debt, missed opportunity, or hardship that follows a decision you made.</p>
+      </section>
+      <section class="s" id="s5">
+        <h2><span class="num">05</span>No guarantee of results</h2>
+        <p>Brooke shares her own money story openly, including her family's debt payoff journey. Those numbers are true, and they are hers.</p>
+        <p><strong>They are not a promise, a projection, or a typical result.</strong> Individual results vary enormously and depend on your income, your expenses, your debt, your family, your health, your local economy, your discipline, and a hundred things neither of us controls.</p>
+        <p>We make no guarantee, express or implied, that you will pay off debt, save a particular amount, reduce your expenses, earn any income, or reach any financial goal by using our free or paid materials. There is no guarantee of results of any kind.</p>
+      </section>
+      <section class="s" id="s6">
+        <h2><span class="num">06</span>Testimonials and success stories</h2>
+        <p>Where members and customers share their wins, those stories are real and shared with permission, but they are individual experiences. <strong>Results shown in testimonials are not typical and are not guaranteed.</strong> Some people apply what they learn and see change quickly. Some do not. Your experience will be your own.</p>
+        <p>Testimonials are not paid unless clearly disclosed as such, and may be edited for length or clarity.</p>
+      </section>
+      <section class="s" id="s7">
+        <h2><span class="num">07</span>Affiliate links and commissions</h2>
+        <p>Some links on this site are affiliate links. If you click one and buy something, The One Income Plan may earn a small commission at no extra cost to you.</p>
+        <p>As an Amazon Associate, The One Income Plan earns from qualifying purchases.</p>
+        <p>We only ever mention products we genuinely use, believe in, or would recommend to a friend. <strong>An affiliate relationship never changes our honest opinion.</strong> We are not paid to say nice things, and no commission is worth recommending something that would not actually help you.</p>
+        <p>This disclosure is made in line with the United States Federal Trade Commission guidelines on endorsements and testimonials.</p>
+      </section>
+      <section class="s" id="s8">
+        <h2><span class="num">08</span>Sponsorships, gifts, and ads</h2>
+        <p>We do not currently accept sponsored posts, paid partnerships, or gifted products, and we do not display ads through an ad network. If that changes, the relationship will be clearly disclosed on the relevant page or post before you read it, and this Disclaimer will be updated.</p>
+      </section>
+      <section class="s" id="s9">
+        <h2><span class="num">09</span>A note on faith</h2>
+        <p>The One Income Plan is a faith friendly brand. Brooke's faith shapes how she thinks about money, contentment, provision, and stewardship, and that perspective shows up honestly in some of what she writes.</p>
+        <p>It is shared, never required. You do not need to share Brooke's faith to be welcome here, to use these tools, or to belong in this community. Nothing on this site is intended as religious instruction, doctrine, or spiritual counsel, and nothing here should be taken as a substitute for guidance from your own pastor, church, or faith community.</p>
+        <p>If the faith language is not for you, take what helps and leave the rest. You are genuinely welcome either way.</p>
+      </section>
+      <section class="s" id="s10">
+        <h2><span class="num">10</span>Tools and downloads</h2>
+        <p>Our budget calculators, trackers, templates, printables, worksheets, and spreadsheets are provided <strong>as is and used at your own risk</strong>. They are simple tools, not audited financial software.</p>
+        <p>We do not warrant that they are accurate, error free, complete, or suited to your circumstances, and we are not responsible for any calculation error, formula issue, formatting problem, or decision made on the strength of one. Check your own numbers.</p>
+      </section>
+      <section class="s" id="s11">
+        <h2><span class="num">11</span>Links to other sites</h2>
+        <p>We sometimes link to other websites, resources, and tools. Those links are shared for convenience, not as an endorsement, and we have no control over their content, accuracy, or practices. Visiting them is at your own discretion.</p>
+      </section>
+      <section class="s" id="s12">
+        <h2><span class="num">12</span>Accuracy and updates</h2>
+        <p>Personal finance information changes, and so do laws, rates, programs, and platforms. We make a genuine effort to keep our content accurate and current, but we do not guarantee that everything is correct, complete, or up to date at the moment you read it. We may update or remove content at any time.</p>
+      </section>
+      <section class="s" id="s13">
+        <h2><span class="num">13</span>Limitation of liability</h2>
+        <p>To the fullest extent permitted by law, The One Income Plan and Brooke Michelle Watrous will not be liable for any direct, indirect, incidental, consequential, or special loss or damage arising from your use of this site, our content, our tools, or our products, including any financial loss, debt, or missed opportunity.</p>
+      </section>
+      <section class="s" id="s14">
+        <h2><span class="num">14</span>Questions</h2>
+        <p>If anything here is unclear, please email <a href="mailto:hello@oneincomeplan.com">hello@oneincomeplan.com</a>. We are always happy to explain.</p>
+        <p>Please also read our <a href="/terms">Terms and Conditions</a> and our <a href="/privacy-policy">Privacy Policy</a>.</p>
+      </section>
+      <p style="text-align:center;margin-top:3rem;font-family:'Caveat',cursive;font-size:1.5rem;color:var(--coral-deep);">The One Income Plan ◆ spend with intention, save with purpose</p>
+
+
+  <footer>
+    <div class="container">
+      <a href="/" class="brand-line">The One Income Plan</a>
+      <p class="tagline">spend with intention. save with purpose.</p>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="/start-here">Start Here</a>
+        <a href="/about">About</a>
+        <a href="/free-resources">Free Resources</a>
+        <a href="/membership">Membership</a>
+        <a href="/blog">Blog</a>
+        <a href="/contact">Contact</a>
+        <a href="/opt-in">Free Reality Check</a>
+      </nav>
+      <p class="legal">
+        © 2026 <span data-legal="name">Brooke Michelle Watrous</span>. All rights reserved.
+        &nbsp;·&nbsp;
+        <a href="/privacy-policy">Privacy</a> ·
+        <a href="/terms">Terms</a> ·
+        <a href="/disclaimer">Disclaimer</a> ·
+        <a href="/affiliate-disclosure">Affiliate Disclosure</a>
+      </p>
+    </div>
+  </footer>
+
+
+  <script>
+  /* =========================================================
+     FILL THESE IN ONCE. Every blank on the page reads from here.
+     Anything left unset keeps its visible [PLACEHOLDER] text so
+     you can see at a glance what is still missing.
+     ========================================================= */
+  var BUSINESS = {
+    name:      'Brooke Michelle Watrous',   /* legal entity name, e.g. a registered business name, if she forms one */
+    trading:   'The One Income Plan',
+    entity:    'a Michigan sole proprietorship',   /* e.g. an Ohio limited liability company */
+    address:   '64466 Norton Rd, Constantine, MI 49042',   /* mailing address for legal notices */
+    email:     'hello@oneincomeplan.com',   /* address for privacy and legal contact */
+    state:     'Michigan',   /* governing law, e.g. Ohio */
+    effective: 'August 12, 2026',
+    updated:   'August 12, 2026'
+  };
+
+  Object.keys(BUSINESS).forEach(function (k) {
+    if (!BUSINESS[k]) return;
+    document.querySelectorAll('[data-legal="' + k + '"]').forEach(function (el) {
+      el.textContent = BUSINESS[k];
+      el.removeAttribute('style');
+    });
+  });
+
+  /* mobile nav */
+  (function () {
+    var t = document.getElementById('navToggle'), l = document.getElementById('navLinks');
+    if (!t || !l) return;
+    t.addEventListener('click', function () {
+      var open = l.classList.toggle('open');
+      t.classList.toggle('open', open);
+      t.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    l.querySelectorAll('a').forEach(function (a) {
+      a.addEventListener('click', function () { l.classList.remove('open'); t.classList.remove('open'); });
+    });
+  })();
+  </script>

@@ -1,0 +1,457 @@
+<!--
+  ============================================================
+  THE ONE INCOME PLAN  ·  PRIVACY POLICY
+  URL: /privacy-policy
+  ============================================================
+
+  CONDITIONAL SECTIONS THAT NEED A DECISION
+  Section 05, cookies: name the exact analytics and advertising tools
+  in use, and decide whether a consent banner is required.
+  Section 10, rights: expand if EU or UK visitors are a real audience.
+
+  BEFORE THIS GOES LIVE
+  Fill the BUSINESS object in the script at the bottom. Every blank
+  on the page reads from it. Anything left empty stays visible as a
+  [PLACEHOLDER] so nothing ships half finished by accident.
+
+  This is a drafted document, not legal advice, and it has not been
+  reviewed by an attorney. Have it checked before you rely on it.
+
+  No em dashes or en dashes anywhere.
+  ============================================================
+-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy · The One Income Plan</title>
+  <meta name="description" content="What we collect, why we collect it, and what you can ask us to do about it.">
+  <link rel="canonical" href="https://oneincomeplan.com/privacy-policy">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&amp;family=DM+Serif+Display&amp;display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --deep-sage:#2E3E2F;--sage:#5C6E47;--warm-tan:#C28954;--warm-tan-dark:#A77246;
+      --cream:#FBF4D7;--cream-warm:#F7ECC4;--charcoal:#2A2A2A;--soft-gray:#7E867D;
+      --light-sage:#DBE3CE;--pale-tan:#EFE0C1;--white:#FFFFFF;
+      --coral:#DD6B4E;--coral-deep:#C25441;--coral-soft:#F7D0BE;--coral-blush:#FBE3D5;
+      --gold:#D4A83F;--gold-soft:#EDD98D;--gold-deep:#B8912E;
+      --ease:cubic-bezier(.22,.61,.36,1);
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    html{font-size:17px;scroll-behavior:smooth;}
+    @media(min-width:720px){html{font-size:18px;}}
+    body{font-family:Georgia,'Times New Roman',serif;font-size:1.04rem;line-height:1.75;
+      color:var(--charcoal);background:var(--cream);-webkit-font-smoothing:antialiased;overflow-x:hidden;}
+    .container{max-width:1240px;margin:0 auto;padding:0 1.5rem;}
+    .doc{max-width:52rem;margin:0 auto;padding:0 1.5rem;}
+    h1,h2,h3{font-family:Georgia,serif;color:var(--deep-sage);}
+    .script{font-family:'Caveat',cursive;font-weight:700;}
+    a{color:var(--coral-deep);}
+
+    /* nav, same as the public pages */
+    .nav{background:rgba(251,244,215,.95);border-bottom:1px solid rgba(194,137,84,.18);
+      position:sticky;top:0;z-index:100;backdrop-filter:blur(10px);}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;padding:1.1rem 1.5rem;
+      max-width:1280px;margin:0 auto;position:relative;}
+    .nav-logo{font-size:1.3rem;font-weight:bold;color:var(--deep-sage);letter-spacing:.03em;
+      text-decoration:none;line-height:1;display:flex;align-items:baseline;gap:.5rem;}
+    .nav-logo .dot{width:8px;height:8px;border-radius:50%;background:var(--coral);display:inline-block;}
+    .nav-logo em{display:block;font-family:'Caveat',cursive;font-weight:500;font-style:normal;
+      color:var(--coral-deep);font-size:.95rem;margin-top:-2px;}
+    .nav-links{display:flex;gap:1.6rem;align-items:center;}
+    .nav-links a{font-size:.95rem;color:var(--deep-sage);text-decoration:none;position:relative;
+      white-space:nowrap;transition:color .2s var(--ease);}
+    .nav-links a:not(.nav-cta):hover{color:var(--coral-deep);}
+    .nav-cta{background:var(--coral);color:#fff!important;padding:.6rem 1.25rem;border-radius:999px;
+      font-size:.85rem!important;font-weight:bold;letter-spacing:.04em;box-shadow:0 3px 0 var(--coral-deep);
+      transition:all .25s var(--ease);}
+    .nav-cta:hover{background:var(--coral-deep);transform:translateY(-1px);}
+    .nav-toggle{display:none;background:none;border:none;width:44px;height:44px;cursor:pointer;
+      flex-direction:column;align-items:center;justify-content:center;gap:5px;}
+    .nav-toggle span{display:block;width:24px;height:2px;background:var(--deep-sage);border-radius:2px;
+      transition:transform .28s var(--ease),opacity .2s var(--ease);}
+    .nav-toggle.open span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+    .nav-toggle.open span:nth-child(2){opacity:0;}
+    .nav-toggle.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+    @media(max-width:1000px){
+      .nav-toggle{display:flex;}
+      .nav-links{position:absolute;top:100%;left:0;right:0;background:var(--cream);flex-direction:column;
+        align-items:stretch;gap:0;padding:0 1.5rem;max-height:0;overflow:hidden;
+        transition:max-height .35s var(--ease),padding .35s var(--ease);
+        border-bottom:1px solid rgba(194,137,84,.18);box-shadow:0 18px 40px rgba(46,62,47,.08);}
+      .nav-links.open{max-height:560px;padding-bottom:1.5rem;}
+      .nav-links a{padding:.95rem 0;border-bottom:1px solid rgba(194,137,84,.15);font-size:1.05rem;}
+      .nav-cta{text-align:center;margin-top:1.1rem;border-bottom:none;padding:.9rem 1.25rem;}
+    }
+
+    /* header */
+    .legal-hero{background:var(--cream);padding:3.5rem 0 2.5rem;position:relative;overflow:hidden;}
+    .legal-hero::before{content:"";position:absolute;top:-190px;right:-150px;width:500px;height:500px;
+      background:radial-gradient(circle,var(--coral-blush)0%,transparent 65%);opacity:.7;pointer-events:none;}
+    .legal-hero .doc{position:relative;z-index:2;}
+    .legal-kicker{font-size:.76rem;font-weight:bold;letter-spacing:.2em;text-transform:uppercase;
+      color:var(--coral-deep);display:inline-flex;align-items:center;gap:.7rem;margin-bottom:.9rem;}
+    .legal-kicker::before{content:"";width:28px;height:1px;background:var(--coral);display:inline-block;}
+    .legal-hero h1{font-size:clamp(2rem,5vw,3.1rem);line-height:1.06;letter-spacing:-.02em;margin-bottom:1rem;}
+    .legal-lead{font-size:1.1rem;font-style:italic;color:var(--sage);}
+    .dates{margin-top:1.5rem;padding-top:1.25rem;border-top:1px solid rgba(194,137,84,.3);
+      font-size:.9rem;color:var(--soft-gray);}
+    .dates b{color:var(--deep-sage);}
+
+    /* body */
+    .legal-body{background:var(--white);padding:3rem 0 4rem;}
+    .toc{background:var(--cream);border-radius:12px;padding:1.6rem 1.85rem;margin-bottom:2.75rem;
+      border-left:5px solid var(--coral);}
+    .toc h2{font-size:.78rem;font-weight:bold;letter-spacing:.18em;text-transform:uppercase;
+      color:var(--coral-deep);margin-bottom:.9rem;}
+    .toc ol{list-style:none;counter-reset:toc;columns:2;column-gap:2rem;}
+    @media(max-width:640px){.toc ol{columns:1;}}
+    .toc li{counter-increment:toc;padding:.28rem 0 .28rem 1.9rem;position:relative;font-size:.95rem;
+      break-inside:avoid;}
+    .toc li::before{content:counter(toc,decimal-leading-zero);position:absolute;left:0;
+      font-family:'DM Serif Display',Georgia,serif;font-size:.85rem;color:var(--warm-tan);}
+    .toc a{text-decoration:none;color:var(--deep-sage);}
+    .toc a:hover{color:var(--coral-deep);text-decoration:underline;}
+
+    section.s{margin-bottom:2.5rem;scroll-margin-top:6rem;}
+    section.s > h2{font-size:1.32rem;line-height:1.3;margin-bottom:.85rem;
+      padding-bottom:.5rem;border-bottom:2px solid var(--pale-tan);}
+    section.s > h2 .num{font-family:'DM Serif Display',Georgia,serif;color:var(--coral-deep);
+      margin-right:.6rem;}
+    section.s h3{font-size:1.05rem;margin:1.4rem 0 .5rem;color:var(--sage);}
+    section.s p{margin-bottom:1rem;}
+    section.s ul{margin:0 0 1rem;list-style:none;}
+    section.s ul li{padding:.32rem 0 .32rem 1.6rem;position:relative;}
+    section.s ul li::before{content:"\25C6";position:absolute;left:0;top:.5rem;color:var(--coral);
+      font-size:.6rem;}
+    section.s strong{color:var(--deep-sage);}
+
+    .callout{background:var(--coral-blush);border-radius:12px;padding:1.4rem 1.7rem;margin:1.5rem 0;
+      border-left:5px solid var(--coral);}
+    .callout p{margin-bottom:.6rem;}
+    .callout p:last-child{margin-bottom:0;}
+    .callout b{color:var(--coral-deep);}
+    .hard{background:var(--deep-sage);color:var(--cream);border-radius:12px;padding:1.6rem 1.85rem;
+      margin:1.75rem 0;}
+    .hard h3{color:var(--gold-soft);margin:0 0 .6rem;font-size:1rem;letter-spacing:.06em;
+      text-transform:uppercase;}
+    .hard p{margin-bottom:.7rem;}
+    .hard p:last-child{margin-bottom:0;}
+
+    table.t{width:100%;border-collapse:collapse;margin:1.1rem 0 1.4rem;font-size:.95rem;}
+    table.t th{text-align:left;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;
+      color:var(--coral-deep);padding:.55rem .7rem;border-bottom:2px solid var(--pale-tan);}
+    table.t td{padding:.6rem .7rem;border-bottom:1px solid rgba(46,62,47,.09);vertical-align:top;}
+    table.t tr:last-child td{border-bottom:none;}
+
+    /* cross links */
+    .legal-nav{background:var(--light-sage);padding:2.75rem 0;}
+    .legal-nav h2{text-align:center;font-size:1.15rem;margin-bottom:1.5rem;}
+    .legal-nav-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;max-width:60rem;margin:0 auto;}
+    @media(max-width:820px){.legal-nav-grid{grid-template-columns:repeat(2,1fr);}}
+    @media(max-width:460px){.legal-nav-grid{grid-template-columns:1fr;}}
+    .legal-nav-grid a{background:var(--white);border-radius:10px;padding:1.1rem 1.15rem;text-decoration:none;
+      display:block;border:1px solid rgba(221,107,78,.18);transition:all .25s var(--ease);}
+    .legal-nav-grid a:hover{transform:translateY(-4px);box-shadow:0 16px 32px rgba(46,62,47,.1);}
+    .legal-nav-grid a.here{background:var(--cream-warm);border-color:var(--coral);}
+    .legal-nav-grid b{display:block;color:var(--deep-sage);font-size:.99rem;margin-bottom:.2rem;}
+    .legal-nav-grid span{font-size:.84rem;color:var(--sage);font-style:italic;}
+
+    footer{background:var(--deep-sage);color:var(--cream);padding:3.5rem 0 2rem;text-align:center;}
+    footer .brand-line{font-family:'DM Serif Display',Georgia,serif;font-size:1.8rem;color:var(--cream);
+      text-decoration:none;display:inline-block;}
+    footer .tagline{font-family:'Caveat',cursive;color:var(--coral-soft);font-size:1.35rem;margin:.4rem 0 2rem;}
+    footer .footer-nav{display:flex;justify-content:center;flex-wrap:wrap;gap:1.25rem 2rem;margin:2rem 0;
+      padding-top:2rem;border-top:1px solid rgba(221,107,78,.2);}
+    footer .footer-nav a{color:var(--cream);opacity:.85;text-decoration:none;font-size:.95rem;}
+    footer .footer-nav a:hover{opacity:1;color:var(--coral-soft);}
+    footer .legal{padding-top:1rem;margin-top:1.25rem;border-top:1px solid rgba(221,107,78,.12);
+      font-size:.82rem;opacity:.65;}
+    footer .legal a{color:var(--cream);opacity:.8;text-decoration:none;margin:0 .4rem;}
+
+    @media(prefers-reduced-motion:reduce){*{transition-duration:.01ms!important;}}
+    :focus-visible{outline:3px solid var(--coral);outline-offset:3px;}
+</style>
+
+
+
+  <nav class="nav" aria-label="Main">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo"><span class="dot"></span>The One Income Plan<em>&nbsp;by Frugal Home Lover</em></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a href="/" class="nav-home" aria-label="Home" style="display:inline-flex;align-items:center;"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5"></path><path d="M5 9.5V21h14V9.5"></path></svg></a>
+        <a href="/start-here">Start Here</a>
+        <a href="/about">About</a>
+        <a href="/free-resources">Free Resources</a>
+        <a href="/membership">Membership</a>
+        <a href="/blog">Blog</a>
+        <a href="/contact">Contact</a>
+        <a href="/opt-in" class="nav-cta">Free Reality Check</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="legal-hero">
+    <div class="doc">
+      <img src="https://raw.githubusercontent.com/genasbury12/blb-site/claude/brookes-images-folder-sf3xp4/brooke-site-images/legal-note.jpg" alt="Brooke at her kitchen table" loading="lazy" style="width:96px;height:96px;border-radius:50%;object-fit:cover;display:block;margin:0 0 1.25rem;border:3px solid rgba(212,168,63,.6);box-shadow:0 10px 26px rgba(46,62,47,.2);">
+      <span class="legal-kicker">Your information</span>
+      <h1>Privacy Policy</h1>
+      <p class="legal-lead">What we collect, why we collect it, and what you can ask us to do about it.</p>
+      <p class="dates">
+        <b>Effective</b> <span data-legal="effective">August 12, 2026</span>
+        &nbsp;◆&nbsp;
+        <b>Last updated</b> <span data-legal="updated">August 12, 2026</span>
+      </p>
+    </div>
+  </section>
+
+  <div class="legal-body">
+    <div class="doc">
+            <div class="callout" style="background:var(--coral-blush);border-radius:12px;padding:1.6rem 1.85rem;margin-bottom:2rem;border:1px solid rgba(221,107,78,.25);">
+        <p style="font-family:'Caveat',cursive;font-size:1.45rem;color:var(--coral-deep);margin-bottom:.5rem;">the short version, first</p>
+        <p>Your information matters, and so does your trust. This page explains, in plain English, what we collect, why we collect it, who touches it, and what you can do about it.</p><p>The short version: we collect what we need to run a small business well, we never sell your data, and you can ask us to delete you at any time.</p>
+      </div>
+      <nav class="toc" aria-label="On this page">
+        <h2>On this page</h2>
+        <ol>
+        <li><a href="#s1">Who we are</a></li>
+        <li><a href="#s2">What this policy covers</a></li>
+        <li><a href="#s3">Information you give us</a></li>
+        <li><a href="#s4">Information collected automatically</a></li>
+        <li><a href="#s5">Cookies, analytics, and tracking</a></li>
+        <li><a href="#s6">Why we collect your information</a></li>
+        <li><a href="#s7">Legal basis for processing (for visitors in the EU and UK)</a></li>
+        <li><a href="#s8">Email and marketing</a></li>
+        <li><a href="#s9">We do not sell your information</a></li>
+        <li><a href="#s10">Who we share information with</a></li>
+        <li><a href="#s11">Where your information is processed</a></li>
+        <li><a href="#s12">How long we keep your information</a></li>
+        <li><a href="#s13">How we keep your information safe</a></li>
+        <li><a href="#s14">If something goes wrong</a></li>
+        <li><a href="#s15">Your rights</a></li>
+        <li><a href="#s16">Children</a></li>
+        <li><a href="#s17">Do Not Track</a></li>
+        <li><a href="#s18">Changes to this policy</a></li>
+        <li><a href="#s19">Contact us</a></li>
+        </ol>
+      </nav>
+      <section class="s" id="s1">
+        <h2><span class="num">01</span>Who we are</h2>
+        <p>The One Income Plan is owned and operated by Brooke Michelle Watrous, a sole proprietor based in Michigan, United States. We are the data controller for the information described here.</p>
+        <div class="callout"><p><strong>Privacy contact:</strong><br>The One Income Plan<br>64466 Norton Rd<br>Constantine, MI 49042<br><a href="mailto:hello@oneincomeplan.com">hello@oneincomeplan.com</a></p></div>
+      </section>
+      <section class="s" id="s2">
+        <h2><span class="num">02</span>What this policy covers</h2>
+        <p>This policy covers the One Income Plan website and every connected service we run, including our email list, checkout, free resource library, membership area, and community space.</p>
+        <p>It does not cover other websites we link to. Those have their own policies.</p>
+      </section>
+      <section class="s" id="s3">
+        <h2><span class="num">03</span>Information you give us</h2>
+        <p>We collect the information you choose to give us, which may include:</p>
+        <ul>
+          <li>Your name</li>
+          <li>Your email address</li>
+          <li>Your mailing address, where relevant to an order</li>
+          <li>Your phone number, where you provide it</li>
+          <li>Payment information, handled by our payment processor rather than by us</li>
+          <li>Anything you write to us, post in the community, or share in a survey or testimonial</li>
+        </ul>
+        <p>We collect it through opt in forms, checkout, blog comments, our contact form, surveys, membership signup, and direct emails.</p>
+        <p>We do not collect sensitive or financial information beyond what the payment processor needs to take your payment.</p>
+      </section>
+      <section class="s" id="s4">
+        <h2><span class="num">04</span>Information collected automatically</h2>
+        <p>Like most websites, ours and the platforms we use may automatically collect limited technical information when you visit, including your IP address, browser type, device type, referring page, pages viewed, and how long you spend on them.</p>
+        <p>This is standard analytics data. We use it to understand what is useful and what is not, not to identify you personally.</p>
+      </section>
+      <section class="s" id="s5">
+        <h2><span class="num">05</span>Cookies, analytics, and tracking</h2>
+        <p>Our website uses cookies and similar technologies. Cookies are small files stored by your browser that keep the site working properly and help us understand how it is used.</p>
+        <p>We use:</p>
+        <ul>
+          <li><strong>Essential cookies</strong> that make the site, logins, and checkout function</li>
+          <li><strong>Google Analytics</strong> to see how people find and use the site</li>
+          <li><strong>Social and advertising pixels</strong>, which may include the Meta (Facebook) Pixel and the Pinterest Tag, to measure how well our content and offers perform</li>
+        </ul>
+        <p>We do not currently run retargeting ad campaigns that follow you around the internet after you leave, and we do not currently embed third party video or social feeds. If that changes, this policy will be updated.</p>
+        <p>You can block or delete cookies through your browser settings at any time. Some parts of the site may not work properly if you do. Where required by law in your region, we will ask for your consent to non essential cookies before they are set.</p>
+      </section>
+      <section class="s" id="s6">
+        <h2><span class="num">06</span>Why we collect your information</h2>
+        <p>We use your information to:</p>
+        <ul>
+          <li>Deliver the free and paid products you request</li>
+          <li>Process orders, payments, and refunds</li>
+          <li>Give you access to the membership and member resources</li>
+          <li>Send you the emails you signed up for</li>
+          <li>Answer your questions and provide support</li>
+          <li>Improve the website, our content, and our products</li>
+          <li>Keep proper business, tax, and order records</li>
+          <li>Protect the site and prevent fraud or misuse</li>
+        </ul>
+        <p>We do not use your information for automated decision making or profiling.</p>
+      </section>
+      <section class="s" id="s7">
+        <h2><span class="num">07</span>Legal basis for processing (for visitors in the EU and UK)</h2>
+        <p>Where the UK GDPR or EU GDPR applies to you, we rely on:</p>
+        <ul>
+          <li><strong>Consent</strong>, when you join our email list or accept non essential cookies. You may withdraw consent at any time.</li>
+          <li><strong>Contract</strong>, when we need your details to deliver something you bought.</li>
+          <li><strong>Legitimate interests</strong>, for basic analytics, site security, and improving what we offer, balanced against your rights.</li>
+          <li><strong>Legal obligation</strong>, for tax and accounting records.</li>
+        </ul>
+      </section>
+      <section class="s" id="s8">
+        <h2><span class="num">08</span>Email and marketing</h2>
+        <p>We use Flodesk as our email service provider. When you join our list, your name and email address are stored there.</p>
+        <p>You join our list by requesting a free resource, filling in an opt in form, or making a purchase, and by doing so you consent to receiving emails from us. Those emails include content, encouragement, resources, and information about our products and offers.</p>
+        <p><strong>Every email we send includes an unsubscribe link.</strong> One click and you are out, no hard feelings and no questions asked. You can also email <a href="mailto:hello@oneincomeplan.com">hello@oneincomeplan.com</a> and ask to be removed.</p>
+        <p>Unsubscribing from marketing emails does not stop essential transactional messages, such as a receipt, a delivery link, or a note about your membership.</p>
+        <p>We do not currently use SMS or text message marketing. If we ever do, it will be opt in only and separate from your email consent.</p>
+      </section>
+      <section class="s" id="s9">
+        <h2><span class="num">09</span>We do not sell your information</h2>
+        <p><strong>We do not sell, rent, trade, or share your personal information with anyone for their own marketing purposes. Not ever.</strong></p>
+      </section>
+      <section class="s" id="s10">
+        <h2><span class="num">10</span>Who we share information with</h2>
+        <p>We share information only with the service providers we need in order to run the business. These may include:</p>
+        <ul>
+          <li><strong>Showit</strong>, our website host</li>
+          <li><strong>Flodesk</strong>, our email service provider</li>
+          <li><strong>MemberSpace</strong>, which manages membership access</li>
+          <li>Our <strong>payment processor</strong>, which handles checkout and card data</li>
+          <li><strong>Google Analytics</strong>, for website analytics</li>
+          <li><strong>Meta and Pinterest</strong>, where their pixels are active</li>
+          <li>Any cart, course, scheduling, form, or file storage tool we use to deliver a product</li>
+        </ul>
+        <p>Each of these companies handles your data under its own privacy policy and only for the purpose of providing its service to us.</p>
+        <p>We may also disclose information where we are legally required to, or where it is necessary to protect our rights, our members, or the security of the site.</p>
+      </section>
+      <section class="s" id="s11">
+        <h2><span class="num">11</span>Where your information is processed</h2>
+        <p>We operate from the United States, and most of our service providers store and process data there. If you are visiting from outside the United States, your information will be transferred to and processed in the United States, where privacy laws may differ from your own. By using this site, you consent to that transfer.</p>
+      </section>
+      <section class="s" id="s12">
+        <h2><span class="num">12</span>How long we keep your information</h2>
+        <p>We keep your information only as long as we reasonably need it:</p>
+        <ul>
+          <li><strong>Email subscribers:</strong> for as long as you stay subscribed, plus a short period after you unsubscribe so we do not accidentally re add you</li>
+          <li><strong>Customers and members:</strong> for the life of your access, and for a period afterwards for records, support, and tax purposes</li>
+          <li><strong>Order and financial records:</strong> for as long as tax and accounting law requires</li>
+          <li><strong>Comments and community posts:</strong> until you or we remove them</li>
+        </ul>
+        <p>You can ask us to delete your information sooner, and we will unless we are legally required to keep it.</p>
+      </section>
+      <section class="s" id="s13">
+        <h2><span class="num">13</span>How we keep your information safe</h2>
+        <p>We work with reputable, established platforms that maintain their own security standards. Our site uses SSL encryption, access to accounts and data is limited, and we use strong passwords and sensible account security.</p>
+        <p>No website or online service can promise perfect security. We do our honest best, and we ask you to protect your own login details too.</p>
+      </section>
+      <section class="s" id="s14">
+        <h2><span class="num">14</span>If something goes wrong</h2>
+        <p>In the event of a data breach affecting your personal information, we will notify affected users and any relevant authority as promptly as we reasonably can, and within any timeframe the law requires, along with what happened and what you should do.</p>
+      </section>
+      <section class="s" id="s15">
+        <h2><span class="num">15</span>Your rights</h2>
+        <p>Wherever you live, you may email <a href="mailto:hello@oneincomeplan.com">hello@oneincomeplan.com</a> to:</p>
+        <ul>
+          <li>Ask what personal information we hold about you</li>
+          <li>Ask for a copy of it</li>
+          <li>Ask us to correct anything inaccurate</li>
+          <li>Ask us to delete it</li>
+          <li>Unsubscribe from our emails</li>
+          <li>Object to or restrict how we use it</li>
+        </ul>
+        <p>We will respond within thirty days, or sooner where the law requires. We may need to verify your identity before we act, simply to make sure we are not handing your details to someone else.</p>
+        <p><strong>If you are in the EU or UK,</strong> you also have the right to data portability, the right to withdraw consent at any time, and the right to lodge a complaint with your local data protection authority.</p>
+        <p><strong>If you are in California,</strong> the CCPA and CPRA give you the right to know what personal information we collect, use, and disclose, the right to request deletion, the right to correct inaccurate information, the right to opt out of the sale or sharing of personal information, and the right not to be discriminated against for exercising any of these rights. We do not sell personal information as that term is commonly understood. Where the use of advertising pixels is treated as sharing under California law, you may opt out by emailing us or by disabling cookies in your browser.</p>
+      </section>
+      <section class="s" id="s16">
+        <h2><span class="num">16</span>Children</h2>
+        <p>This website is intended for adults. We do not knowingly collect personal information from children under 13, or under 16 where local law sets that threshold. If you believe a child has given us personal information, please email <a href="mailto:hello@oneincomeplan.com">hello@oneincomeplan.com</a> and we will delete it promptly.</p>
+      </section>
+      <section class="s" id="s17">
+        <h2><span class="num">17</span>Do Not Track</h2>
+        <p>Some browsers send a Do Not Track signal. There is no common industry standard for responding to it, so our site does not currently respond to those signals.</p>
+      </section>
+      <section class="s" id="s18">
+        <h2><span class="num">18</span>Changes to this policy</h2>
+        <p>We may update this Privacy Policy as the business grows or as the law changes. The current version always lives on this page with the date it was last updated at the top. Where a change is significant, we will say so by email or with a notice on the site. Continuing to use the site after an update means you accept it.</p>
+      </section>
+      <section class="s" id="s19">
+        <h2><span class="num">19</span>Contact us</h2>
+        <p>Questions about your privacy, your data, or this policy are always welcome.</p>
+        <p><strong>Email:</strong> <a href="mailto:hello@oneincomeplan.com">hello@oneincomeplan.com</a> <strong>Mail:</strong> The One Income Plan, 64466 Norton Rd, Constantine, MI 49042</p>
+        <p>Please also read our <a href="/terms">Terms and Conditions</a> and our <a href="/disclaimer">Disclaimer</a>.</p>
+      </section>
+      <p style="text-align:center;margin-top:3rem;font-family:'Caveat',cursive;font-size:1.5rem;color:var(--coral-deep);">The One Income Plan ◆ spend with intention, save with purpose</p>
+
+
+  <footer>
+    <div class="container">
+      <a href="/" class="brand-line">The One Income Plan</a>
+      <p class="tagline">spend with intention. save with purpose.</p>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="/start-here">Start Here</a>
+        <a href="/about">About</a>
+        <a href="/free-resources">Free Resources</a>
+        <a href="/membership">Membership</a>
+        <a href="/blog">Blog</a>
+        <a href="/contact">Contact</a>
+        <a href="/opt-in">Free Reality Check</a>
+      </nav>
+      <p class="legal">
+        © 2026 <span data-legal="name">Brooke Michelle Watrous</span>. All rights reserved.
+        &nbsp;·&nbsp;
+        <a href="/privacy-policy">Privacy</a> ·
+        <a href="/terms">Terms</a> ·
+        <a href="/disclaimer">Disclaimer</a> ·
+        <a href="/affiliate-disclosure">Affiliate Disclosure</a>
+      </p>
+    </div>
+  </footer>
+
+
+  <script>
+  /* =========================================================
+     FILL THESE IN ONCE. Every blank on the page reads from here.
+     Anything left unset keeps its visible [PLACEHOLDER] text so
+     you can see at a glance what is still missing.
+     ========================================================= */
+  var BUSINESS = {
+    name:      'Brooke Michelle Watrous',   /* legal entity name, e.g. a registered business name, if she forms one */
+    trading:   'The One Income Plan',
+    entity:    'a Michigan sole proprietorship',   /* e.g. an Ohio limited liability company */
+    address:   '64466 Norton Rd, Constantine, MI 49042',   /* mailing address for legal notices */
+    email:     'hello@oneincomeplan.com',   /* address for privacy and legal contact */
+    state:     'Michigan',   /* governing law, e.g. Ohio */
+    effective: 'August 12, 2026',
+    updated:   'August 12, 2026'
+  };
+
+  Object.keys(BUSINESS).forEach(function (k) {
+    if (!BUSINESS[k]) return;
+    document.querySelectorAll('[data-legal="' + k + '"]').forEach(function (el) {
+      el.textContent = BUSINESS[k];
+      el.removeAttribute('style');
+    });
+  });
+
+  /* mobile nav */
+  (function () {
+    var t = document.getElementById('navToggle'), l = document.getElementById('navLinks');
+    if (!t || !l) return;
+    t.addEventListener('click', function () {
+      var open = l.classList.toggle('open');
+      t.classList.toggle('open', open);
+      t.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    l.querySelectorAll('a').forEach(function (a) {
+      a.addEventListener('click', function () { l.classList.remove('open'); t.classList.remove('open'); });
+    });
+  })();
+  </script>

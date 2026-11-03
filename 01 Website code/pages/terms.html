@@ -1,0 +1,491 @@
+<!--
+  ============================================================
+  THE ONE INCOME PLAN  ·  TERMS OF USE
+  URL: /terms
+  ============================================================
+
+  CONDITIONAL SECTIONS THAT NEED A DECISION
+  Section 04, refunds: must state the real policy and must match the
+  membership sales page word for word.
+  Section 14, disputes: court versus binding arbitration is a genuine
+  decision to take with an attorney.
+
+  BEFORE THIS GOES LIVE
+  Fill the BUSINESS object in the script at the bottom. Every blank
+  on the page reads from it. Anything left empty stays visible as a
+  [PLACEHOLDER] so nothing ships half finished by accident.
+
+  This is a drafted document, not legal advice, and it has not been
+  reviewed by an attorney. Have it checked before you rely on it.
+
+  No em dashes or en dashes anywhere.
+  ============================================================
+-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms of Use · The One Income Plan</title>
+  <meta name="description" content="The agreement between you and us when you use this site.">
+  <link rel="canonical" href="https://oneincomeplan.com/terms">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&amp;family=DM+Serif+Display&amp;display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --deep-sage:#2E3E2F;--sage:#5C6E47;--warm-tan:#C28954;--warm-tan-dark:#A77246;
+      --cream:#FBF4D7;--cream-warm:#F7ECC4;--charcoal:#2A2A2A;--soft-gray:#7E867D;
+      --light-sage:#DBE3CE;--pale-tan:#EFE0C1;--white:#FFFFFF;
+      --coral:#DD6B4E;--coral-deep:#C25441;--coral-soft:#F7D0BE;--coral-blush:#FBE3D5;
+      --gold:#D4A83F;--gold-soft:#EDD98D;--gold-deep:#B8912E;
+      --ease:cubic-bezier(.22,.61,.36,1);
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    html{font-size:17px;scroll-behavior:smooth;}
+    @media(min-width:720px){html{font-size:18px;}}
+    body{font-family:Georgia,'Times New Roman',serif;font-size:1.04rem;line-height:1.75;
+      color:var(--charcoal);background:var(--cream);-webkit-font-smoothing:antialiased;overflow-x:hidden;}
+    .container{max-width:1240px;margin:0 auto;padding:0 1.5rem;}
+    .doc{max-width:52rem;margin:0 auto;padding:0 1.5rem;}
+    h1,h2,h3{font-family:Georgia,serif;color:var(--deep-sage);}
+    .script{font-family:'Caveat',cursive;font-weight:700;}
+    a{color:var(--coral-deep);}
+
+    /* nav, same as the public pages */
+    .nav{background:rgba(251,244,215,.95);border-bottom:1px solid rgba(194,137,84,.18);
+      position:sticky;top:0;z-index:100;backdrop-filter:blur(10px);}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;padding:1.1rem 1.5rem;
+      max-width:1280px;margin:0 auto;position:relative;}
+    .nav-logo{font-size:1.3rem;font-weight:bold;color:var(--deep-sage);letter-spacing:.03em;
+      text-decoration:none;line-height:1;display:flex;align-items:baseline;gap:.5rem;}
+    .nav-logo .dot{width:8px;height:8px;border-radius:50%;background:var(--coral);display:inline-block;}
+    .nav-logo em{display:block;font-family:'Caveat',cursive;font-weight:500;font-style:normal;
+      color:var(--coral-deep);font-size:.95rem;margin-top:-2px;}
+    .nav-links{display:flex;gap:1.6rem;align-items:center;}
+    .nav-links a{font-size:.95rem;color:var(--deep-sage);text-decoration:none;position:relative;
+      white-space:nowrap;transition:color .2s var(--ease);}
+    .nav-links a:not(.nav-cta):hover{color:var(--coral-deep);}
+    .nav-cta{background:var(--coral);color:#fff!important;padding:.6rem 1.25rem;border-radius:999px;
+      font-size:.85rem!important;font-weight:bold;letter-spacing:.04em;box-shadow:0 3px 0 var(--coral-deep);
+      transition:all .25s var(--ease);}
+    .nav-cta:hover{background:var(--coral-deep);transform:translateY(-1px);}
+    .nav-toggle{display:none;background:none;border:none;width:44px;height:44px;cursor:pointer;
+      flex-direction:column;align-items:center;justify-content:center;gap:5px;}
+    .nav-toggle span{display:block;width:24px;height:2px;background:var(--deep-sage);border-radius:2px;
+      transition:transform .28s var(--ease),opacity .2s var(--ease);}
+    .nav-toggle.open span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+    .nav-toggle.open span:nth-child(2){opacity:0;}
+    .nav-toggle.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+    @media(max-width:1000px){
+      .nav-toggle{display:flex;}
+      .nav-links{position:absolute;top:100%;left:0;right:0;background:var(--cream);flex-direction:column;
+        align-items:stretch;gap:0;padding:0 1.5rem;max-height:0;overflow:hidden;
+        transition:max-height .35s var(--ease),padding .35s var(--ease);
+        border-bottom:1px solid rgba(194,137,84,.18);box-shadow:0 18px 40px rgba(46,62,47,.08);}
+      .nav-links.open{max-height:560px;padding-bottom:1.5rem;}
+      .nav-links a{padding:.95rem 0;border-bottom:1px solid rgba(194,137,84,.15);font-size:1.05rem;}
+      .nav-cta{text-align:center;margin-top:1.1rem;border-bottom:none;padding:.9rem 1.25rem;}
+    }
+
+    /* header */
+    .legal-hero{background:var(--cream);padding:3.5rem 0 2.5rem;position:relative;overflow:hidden;}
+    .legal-hero::before{content:"";position:absolute;top:-190px;right:-150px;width:500px;height:500px;
+      background:radial-gradient(circle,var(--coral-blush)0%,transparent 65%);opacity:.7;pointer-events:none;}
+    .legal-hero .doc{position:relative;z-index:2;}
+    .legal-kicker{font-size:.76rem;font-weight:bold;letter-spacing:.2em;text-transform:uppercase;
+      color:var(--coral-deep);display:inline-flex;align-items:center;gap:.7rem;margin-bottom:.9rem;}
+    .legal-kicker::before{content:"";width:28px;height:1px;background:var(--coral);display:inline-block;}
+    .legal-hero h1{font-size:clamp(2rem,5vw,3.1rem);line-height:1.06;letter-spacing:-.02em;margin-bottom:1rem;}
+    .legal-lead{font-size:1.1rem;font-style:italic;color:var(--sage);}
+    .dates{margin-top:1.5rem;padding-top:1.25rem;border-top:1px solid rgba(194,137,84,.3);
+      font-size:.9rem;color:var(--soft-gray);}
+    .dates b{color:var(--deep-sage);}
+
+    /* body */
+    .legal-body{background:var(--white);padding:3rem 0 4rem;}
+    .toc{background:var(--cream);border-radius:12px;padding:1.6rem 1.85rem;margin-bottom:2.75rem;
+      border-left:5px solid var(--coral);}
+    .toc h2{font-size:.78rem;font-weight:bold;letter-spacing:.18em;text-transform:uppercase;
+      color:var(--coral-deep);margin-bottom:.9rem;}
+    .toc ol{list-style:none;counter-reset:toc;columns:2;column-gap:2rem;}
+    @media(max-width:640px){.toc ol{columns:1;}}
+    .toc li{counter-increment:toc;padding:.28rem 0 .28rem 1.9rem;position:relative;font-size:.95rem;
+      break-inside:avoid;}
+    .toc li::before{content:counter(toc,decimal-leading-zero);position:absolute;left:0;
+      font-family:'DM Serif Display',Georgia,serif;font-size:.85rem;color:var(--warm-tan);}
+    .toc a{text-decoration:none;color:var(--deep-sage);}
+    .toc a:hover{color:var(--coral-deep);text-decoration:underline;}
+
+    section.s{margin-bottom:2.5rem;scroll-margin-top:6rem;}
+    section.s > h2{font-size:1.32rem;line-height:1.3;margin-bottom:.85rem;
+      padding-bottom:.5rem;border-bottom:2px solid var(--pale-tan);}
+    section.s > h2 .num{font-family:'DM Serif Display',Georgia,serif;color:var(--coral-deep);
+      margin-right:.6rem;}
+    section.s h3{font-size:1.05rem;margin:1.4rem 0 .5rem;color:var(--sage);}
+    section.s p{margin-bottom:1rem;}
+    section.s ul{margin:0 0 1rem;list-style:none;}
+    section.s ul li{padding:.32rem 0 .32rem 1.6rem;position:relative;}
+    section.s ul li::before{content:"\25C6";position:absolute;left:0;top:.5rem;color:var(--coral);
+      font-size:.6rem;}
+    section.s strong{color:var(--deep-sage);}
+
+    .callout{background:var(--coral-blush);border-radius:12px;padding:1.4rem 1.7rem;margin:1.5rem 0;
+      border-left:5px solid var(--coral);}
+    .callout p{margin-bottom:.6rem;}
+    .callout p:last-child{margin-bottom:0;}
+    .callout b{color:var(--coral-deep);}
+    .hard{background:var(--deep-sage);color:var(--cream);border-radius:12px;padding:1.6rem 1.85rem;
+      margin:1.75rem 0;}
+    .hard h3{color:var(--gold-soft);margin:0 0 .6rem;font-size:1rem;letter-spacing:.06em;
+      text-transform:uppercase;}
+    .hard p{margin-bottom:.7rem;}
+    .hard p:last-child{margin-bottom:0;}
+
+    table.t{width:100%;border-collapse:collapse;margin:1.1rem 0 1.4rem;font-size:.95rem;}
+    table.t th{text-align:left;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;
+      color:var(--coral-deep);padding:.55rem .7rem;border-bottom:2px solid var(--pale-tan);}
+    table.t td{padding:.6rem .7rem;border-bottom:1px solid rgba(46,62,47,.09);vertical-align:top;}
+    table.t tr:last-child td{border-bottom:none;}
+
+    /* cross links */
+    .legal-nav{background:var(--light-sage);padding:2.75rem 0;}
+    .legal-nav h2{text-align:center;font-size:1.15rem;margin-bottom:1.5rem;}
+    .legal-nav-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;max-width:60rem;margin:0 auto;}
+    @media(max-width:820px){.legal-nav-grid{grid-template-columns:repeat(2,1fr);}}
+    @media(max-width:460px){.legal-nav-grid{grid-template-columns:1fr;}}
+    .legal-nav-grid a{background:var(--white);border-radius:10px;padding:1.1rem 1.15rem;text-decoration:none;
+      display:block;border:1px solid rgba(221,107,78,.18);transition:all .25s var(--ease);}
+    .legal-nav-grid a:hover{transform:translateY(-4px);box-shadow:0 16px 32px rgba(46,62,47,.1);}
+    .legal-nav-grid a.here{background:var(--cream-warm);border-color:var(--coral);}
+    .legal-nav-grid b{display:block;color:var(--deep-sage);font-size:.99rem;margin-bottom:.2rem;}
+    .legal-nav-grid span{font-size:.84rem;color:var(--sage);font-style:italic;}
+
+    footer{background:var(--deep-sage);color:var(--cream);padding:3.5rem 0 2rem;text-align:center;}
+    footer .brand-line{font-family:'DM Serif Display',Georgia,serif;font-size:1.8rem;color:var(--cream);
+      text-decoration:none;display:inline-block;}
+    footer .tagline{font-family:'Caveat',cursive;color:var(--coral-soft);font-size:1.35rem;margin:.4rem 0 2rem;}
+    footer .footer-nav{display:flex;justify-content:center;flex-wrap:wrap;gap:1.25rem 2rem;margin:2rem 0;
+      padding-top:2rem;border-top:1px solid rgba(221,107,78,.2);}
+    footer .footer-nav a{color:var(--cream);opacity:.85;text-decoration:none;font-size:.95rem;}
+    footer .footer-nav a:hover{opacity:1;color:var(--coral-soft);}
+    footer .legal{padding-top:1rem;margin-top:1.25rem;border-top:1px solid rgba(221,107,78,.12);
+      font-size:.82rem;opacity:.65;}
+    footer .legal a{color:var(--cream);opacity:.8;text-decoration:none;margin:0 .4rem;}
+
+    @media(prefers-reduced-motion:reduce){*{transition-duration:.01ms!important;}}
+    :focus-visible{outline:3px solid var(--coral);outline-offset:3px;}
+</style>
+
+
+
+  <nav class="nav" aria-label="Main">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo"><span class="dot"></span>The One Income Plan<em>&nbsp;by Frugal Home Lover</em></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a href="/" class="nav-home" aria-label="Home" style="display:inline-flex;align-items:center;"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5"></path><path d="M5 9.5V21h14V9.5"></path></svg></a>
+        <a href="/start-here">Start Here</a>
+        <a href="/about">About</a>
+        <a href="/free-resources">Free Resources</a>
+        <a href="/membership">Membership</a>
+        <a href="/blog">Blog</a>
+        <a href="/contact">Contact</a>
+        <a href="/opt-in" class="nav-cta">Free Reality Check</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="legal-hero">
+    <div class="doc">
+      <img src="https://raw.githubusercontent.com/genasbury12/blb-site/claude/brookes-images-folder-sf3xp4/brooke-site-images/legal-note.jpg" alt="Brooke at her kitchen table" loading="lazy" style="width:96px;height:96px;border-radius:50%;object-fit:cover;display:block;margin:0 0 1.25rem;border:3px solid rgba(212,168,63,.6);box-shadow:0 10px 26px rgba(46,62,47,.2);">
+      <span class="legal-kicker">The agreement</span>
+      <h1>Terms and Conditions</h1>
+      <p class="legal-lead">The agreement between you and us when you use this site.</p>
+      <p class="dates">
+        <b>Effective</b> <span data-legal="effective">August 12, 2026</span>
+        &nbsp;◆&nbsp;
+        <b>Last updated</b> <span data-legal="updated">October 26, 2026</span>
+      </p>
+    </div>
+  </section>
+
+  <div class="legal-body">
+    <div class="doc">
+            <div class="callout" style="background:var(--coral-blush);border-radius:12px;padding:1.6rem 1.85rem;margin-bottom:2rem;border:1px solid rgba(221,107,78,.25);">
+        <p style="font-family:'Caveat',cursive;font-size:1.45rem;color:var(--coral-deep);margin-bottom:.5rem;">the human version, first</p>
+        <p>Hi, and welcome. This page covers the practical agreement between you and The One Income Plan. It is written to be as plain as legal language can reasonably be, because you deserve to understand what you are agreeing to before you agree to it.</p><p>Please read it. By using this website, joining the email list, downloading a free resource, or purchasing anything from The One Income Plan, you are agreeing to these Terms.</p>
+      </div>
+      <nav class="toc" aria-label="On this page">
+        <h2>On this page</h2>
+        <ol>
+        <li><a href="#s1">Who you are dealing with</a></li>
+        <li><a href="#s2">Agreeing to these Terms</a></li>
+        <li><a href="#s3">Who may use this site</a></li>
+        <li><a href="#s4">What we sell</a></li>
+        <li><a href="#s5">Prices, payment, and taxes</a></li>
+        <li><a href="#s6">Free resources</a></li>
+        <li><a href="#s7">Refunds and guarantees</a></li>
+        <li><a href="#s8">Membership billing and cancellation</a></li>
+        <li><a href="#s9">Chargebacks and payment disputes</a></li>
+        <li><a href="#s10">What you get when you buy</a></li>
+        <li><a href="#s11">What you may not do with our materials</a></li>
+        <li><a href="#s12">Sharing our free blog content</a></li>
+        <li><a href="#s13">Content you submit</a></li>
+        <li><a href="#s14">Community and member conduct</a></li>
+        <li><a href="#s15">Accounts and logins</a></li>
+        <li><a href="#s16">Using the website</a></li>
+        <li><a href="#s17">Availability, errors, and changes</a></li>
+        <li><a href="#s18">Links and tools we do not control</a></li>
+        <li><a href="#s19">Disclaimer and limitation of liability</a></li>
+        <li><a href="#s20">Indemnity</a></li>
+        <li><a href="#s21">Ending access</a></li>
+        <li><a href="#s22">Governing law</a></li>
+        <li><a href="#s23">Resolving disputes</a></li>
+        <li><a href="#s24">Changes to these Terms</a></li>
+        <li><a href="#s25">The rest of the fine print</a></li>
+        <li><a href="#s26">Getting in touch</a></li>
+        </ol>
+      </nav>
+      <section class="s" id="s1">
+        <h2><span class="num">01</span>Who you are dealing with</h2>
+        <p>The One Income Plan is owned and operated by Brooke Michelle Watrous, a sole proprietor based in Michigan, United States.</p>
+        <p>Throughout this page, "we," "us," and "our" mean The One Income Plan. "You" means you, the person visiting the site, subscribing, or purchasing.</p>
+        <div class="callout"><p><strong>Contact for legal and general questions:</strong><br>The One Income Plan<br>64466 Norton Rd<br>Constantine, MI 49042<br><a href="mailto:hello@oneincomeplan.com">hello@oneincomeplan.com</a></p></div>
+        <p>These Terms apply to the One Income Plan website and to every connected product, membership, community space, resource library, and checkout page we operate.</p>
+      </section>
+      <section class="s" id="s2">
+        <h2><span class="num">02</span>Agreeing to these Terms</h2>
+        <p>By browsing the site, entering your email address, downloading a free resource, creating a login, or buying a product, you confirm that you have read these Terms and agree to be bound by them. If you do not agree, please do not use the site or purchase from us.</p>
+        <p>These Terms apply to free resources exactly as they apply to paid ones.</p>
+      </section>
+      <section class="s" id="s3">
+        <h2><span class="num">03</span>Who may use this site</h2>
+        <p>You must be at least 18 years old to purchase anything from The One Income Plan, and you confirm that you are when you buy. The site is intended for adults and is not directed at children.</p>
+        <p>We welcome visitors and customers from outside the United States. If you are buying from another country, you are responsible for complying with your own local laws, and you accept that your information will be processed in the United States.</p>
+      </section>
+      <section class="s" id="s4">
+        <h2><span class="num">04</span>What we sell</h2>
+        <p>The One Income Plan currently offers, or plans to offer:</p>
+        <ul>
+          <li>Free resources and printables, including a free resource library</li>
+          <li>A budget toolkit</li>
+          <li>A frugal living bundle</li>
+          <li>A signature program</li>
+          <li>A monthly and annual membership</li>
+        </ul>
+        <p>Everything we sell is digital. We do not sell physical products, and we do not currently offer coaching, one to one sessions, or done for you services. If that changes, these Terms will be updated to cover it.</p>
+        <p>Product descriptions, contents, formats, and bonuses may change over time as we improve them.</p>
+      </section>
+      <section class="s" id="s5">
+        <h2><span class="num">05</span>Prices, payment, and taxes</h2>
+        <p>All prices are listed in United States dollars.</p>
+        <p>Payments are processed by a third party payment processor. We never see or store your full card details. The processor handles all payment data on secure systems of its own.</p>
+        <p>Prices are exclusive of any applicable tax. We are responsible for remitting the taxes we owe on sales. You are responsible for any import, VAT, or local charges your own country may apply to a digital purchase.</p>
+        <p>We reserve the right to change our prices, our offers, our bonuses, and this website at any time and without notice. A price change never affects an order you have already completed.</p>
+        <p>Any coupon or discount code we issue may carry its own conditions, may be limited in time or quantity, cannot be combined with other offers unless we say so, and may be withdrawn at any point before you use it.</p>
+      </section>
+      <section class="s" id="s6">
+        <h2><span class="num">06</span>Free resources</h2>
+        <p>Some of what we offer is free. Free resources are usually delivered in exchange for your email address, and by requesting one you are agreeing to join our email list. You can leave that list at any time.</p>
+        <p>Free resources are protected by the same copyright and usage rules as our paid products, and they carry no refund or guarantee of any kind because no money changes hands. Bonuses, fast action gifts, and anything included at no charge alongside a paid purchase are excluded from all refunds and guarantees.</p>
+      </section>
+      <section class="s" id="s7">
+        <h2><span class="num">07</span>Refunds and guarantees</h2>
+        <p>Because everything we sell is digital and available immediately, <strong>all sales are final and we do not offer refunds once a product has been purchased, downloaded, or accessed.</strong> The one exception is the membership's Peaceful Month Promise, set out in section 08.</p>
+        <p>Please read the product description before you buy, and email <a href="mailto:hello@oneincomeplan.com">hello@oneincomeplan.com</a> with any question at all beforehand. We would much rather answer a question than process a disappointment.</p>
+        <p><strong>Where a specific offer carries a written money back guarantee,</strong> the guarantee terms shown on that product's sales page govern. Those guarantees are conditional, not automatic. Where a guarantee requires you to show your completed workbook or other proof that you did the work, that proof must be submitted by email within the stated window, and a request without it will not qualify.</p>
+        <p>Technical trouble is not a reason for a refund, but it is absolutely a reason to email us. If you cannot open, access, or download something you paid for, contact us and we will fix it.</p>
+      </section>
+      <section class="s" id="s8">
+        <h2><span class="num">08</span>Membership billing and cancellation</h2>
+        <p>Our membership is billed monthly or annually and renews automatically until you cancel.</p>
+        <p>You may cancel at any time before your next billing date. When you cancel, you keep access for the remainder of the period you have already paid for, and your membership simply does not renew after that.</p>
+        <p><strong>The Peaceful Month Promise.</strong> If you are new to the membership, you have thirty days from your first payment to try it properly. If money still feels the same and you email <a href="mailto:hello@oneincomeplan.com">hello@oneincomeplan.com</a> within those thirty days, we refund your first payment in full, no proof or workbook required, and you keep every printable you downloaded. The promise covers your first payment only, once per member.</p>
+        <p>Outside the Peaceful Month Promise, membership payments are not refundable, including partial months and unused time. There is no penalty and no minimum term. You are free to leave whenever you like.</p>
+        <p>If a payment fails or is declined, we will let you know and ask you to provide a different payment method. If the payment is not resolved, access may be paused or ended until it is.</p>
+        <p>When your membership ends, for any reason, your access to member only pages, resources, and community spaces ends with it. Please download anything you want to keep before you go.</p>
+      </section>
+      <section class="s" id="s9">
+        <h2><span class="num">09</span>Chargebacks and payment disputes</h2>
+        <p>If something goes wrong with an order, please email <a href="mailto:hello@oneincomeplan.com">hello@oneincomeplan.com</a> first. We are one person and a real inbox, and most problems can be sorted out in a day.</p>
+        <p>You agree to contact us and give us a reasonable opportunity to resolve the issue before filing a chargeback or payment dispute with your bank or card issuer.</p>
+        <p>Filing a chargeback for a product that was properly delivered, and that you accessed or downloaded, is a breach of these Terms. Where that happens we may immediately suspend or terminate your access to all products, memberships, and community spaces, permanently decline future purchases from you, and pursue the amount owed together with any fees, costs, and reasonable expenses we incur in recovering it.</p>
+      </section>
+      <section class="s" id="s10">
+        <h2><span class="num">10</span>What you get when you buy</h2>
+        <p>When you buy a product, you are buying a limited, personal, non transferable, non exclusive licence to use it. You are not buying ownership of the materials, and the copyright stays with us.</p>
+        <p>Access periods vary by product and are stated on each sales page. Some products carry lifetime access, meaning for as long as we continue to make that product available. Some carry a fixed access window. Membership resources are available for as long as your membership is active.</p>
+        <p>"Lifetime" means the commercially reasonable lifetime of the product, not a promise that any particular product, platform, or website will exist forever.</p>
+      </section>
+      <section class="s" id="s11">
+        <h2><span class="num">11</span>What you may not do with our materials</h2>
+        <p>Our printables, templates, worksheets, trackers, lessons, videos, and written content are for <strong>your personal use only</strong>. They are not licensed for commercial or client use.</p>
+        <p>You may not:</p>
+        <ul>
+          <li>Resell, licence, rent, or redistribute our materials</li>
+          <li>Share your login, password, or member access with anyone else</li>
+          <li>Share, upload, or forward downloaded files to other people</li>
+          <li>Copy our content, wording, or materials into your own products, freebies, or offers</li>
+          <li>Reproduce our materials for a class, group, workplace, or client</li>
+          <li>Remove our branding or claim our work as your own</li>
+          <li>Use our content to train an artificial intelligence model or system</li>
+        </ul>
+        <p>Doing any of these things ends your licence immediately, with no refund, and may leave you liable for copyright infringement.</p>
+      </section>
+      <section class="s" id="s12">
+        <h2><span class="num">12</span>Sharing our free blog content</h2>
+        <p>You are very welcome to quote a short excerpt from our blog, share a link, or reference our work, as long as you credit The One Income Plan clearly and link back to the original page. Please do not republish a whole post, and please do not use our images without asking first.</p>
+      </section>
+      <section class="s" id="s13">
+        <h2><span class="num">13</span>Content you submit</h2>
+        <p>If you leave a comment, post in the community, send us a testimonial, complete a survey, or share your story with us, you keep ownership of what you wrote. You also give us a non exclusive, royalty free, worldwide permission to use, reproduce, edit for length or clarity, and display that content in our marketing, on our website, in our emails, and on social media, alongside your first name or the name you gave us.</p>
+        <p>Please only submit content that is yours to share, that is honest, and that does not infringe anyone else's rights.</p>
+        <p>We may remove or decline to publish anything at our discretion.</p>
+      </section>
+      <section class="s" id="s14">
+        <h2><span class="num">14</span>Community and member conduct</h2>
+        <p>Our membership and community exist to be a kind, steady, safe place for people working through hard money seasons. To keep it that way, the following will get a member removed:</p>
+        <ul>
+          <li>Misuse of our products, including copying, sharing, or reselling them</li>
+          <li>Hateful, cruel, discriminatory, or harassing comments</li>
+          <li>Crude or abusive language</li>
+          <li>Sharing another member's story, words, or personal details outside the community</li>
+          <li>Promoting your own business, offers, or affiliate links without permission</li>
+          <li>Giving professional financial, legal, or tax advice to other members</li>
+        </ul>
+        <p>We reserve the right to suspend, remove, or terminate any member's access on these grounds, at our discretion, without refund.</p>
+        <p>If the community closes or moves, we will give reasonable notice. Posts and comments within the community are not permanently archived for you, so save anything you want to keep.</p>
+      </section>
+      <section class="s" id="s15">
+        <h2><span class="num">15</span>Accounts and logins</h2>
+        <p>Some parts of this site require a login. You are responsible for keeping your login details private and for everything that happens under your account. Logins are for one person only. If you believe someone else is using your account, tell us right away.</p>
+      </section>
+      <section class="s" id="s16">
+        <h2><span class="num">16</span>Using the website</h2>
+        <p>When you use this site, you agree not to:</p>
+        <ul>
+          <li>Scrape, harvest, or automatically collect content or data from it</li>
+          <li>Upload viruses, malicious code, or harmful files</li>
+          <li>Impersonate Brooke, The One Income Plan, or any other person</li>
+          <li>Misuse our forms, comments, or contact tools, including for spam</li>
+          <li>Attempt to gain access to member areas or systems you have not paid for</li>
+          <li>Interfere with the operation or security of the site</li>
+        </ul>
+        <p>We moderate blog comments and may edit, decline, or remove any comment at our discretion, including spam, promotional comments, and anything unkind.</p>
+      </section>
+      <section class="s" id="s17">
+        <h2><span class="num">17</span>Availability, errors, and changes</h2>
+        <p>We work hard to keep this site running and accurate, but we cannot promise that it will always be available, error free, or fully up to date. Content, prices, and details may occasionally be outdated or contain mistakes, and links may break. Downtime happens, especially during platform updates.</p>
+        <p>We may change, pause, or discontinue any part of the site, any product, or any offer at any time without notice.</p>
+      </section>
+      <section class="s" id="s18">
+        <h2><span class="num">18</span>Links and tools we do not control</h2>
+        <p>Our site links to other websites, tools, and services that we do not own or run. We are not responsible for their content, their practices, or their privacy policies. When you follow a link away from our site, you are subject to that site's own terms.</p>
+      </section>
+      <section class="s" id="s19">
+        <h2><span class="num">19</span>Disclaimer and limitation of liability</h2>
+        <p>The One Income Plan shares educational and informational personal finance content based on Brooke's own experience. It is not professional financial, legal, tax, accounting, or investment advice. Please read our full <a href="/disclaimer">Disclaimer</a>, which forms part of these Terms.</p>
+        <p>Everything on this site and in our products is provided on an "as is" and "as available" basis, without warranties of any kind, express or implied, including any implied warranty of merchantability, fitness for a particular purpose, or accuracy.</p>
+        <p>To the fullest extent permitted by law, The One Income Plan and Brooke Michelle Watrous will not be liable for any indirect, incidental, consequential, special, or punitive damages, or for any loss of income, profit, savings, data, or opportunity, arising from your use of this site, our content, or our products, however that loss arises.</p>
+        <p>Where liability cannot lawfully be excluded, our total liability to you for any claim is limited to the amount you actually paid us for the product the claim relates to, or fifty United States dollars, whichever is greater.</p>
+        <p>You are responsible for your own financial decisions and their outcomes.</p>
+      </section>
+      <section class="s" id="s20">
+        <h2><span class="num">20</span>Indemnity</h2>
+        <p>You agree to indemnify and hold harmless The One Income Plan and Brooke Michelle Watrous from any claim, loss, liability, or expense, including reasonable legal fees, arising from your breach of these Terms, your misuse of our materials, or content you submit to us.</p>
+      </section>
+      <section class="s" id="s21">
+        <h2><span class="num">21</span>Ending access</h2>
+        <p>We may suspend or end your access to the site, a product, or the membership if you breach these Terms, misuse our materials, file an unwarranted chargeback, or behave in a way that harms other members. Where the breach is serious, that decision is final and no refund is given.</p>
+      </section>
+      <section class="s" id="s22">
+        <h2><span class="num">22</span>Governing law</h2>
+        <p>These Terms are governed by the laws of the State of Michigan, United States, without regard to its conflict of law rules.</p>
+      </section>
+      <section class="s" id="s23">
+        <h2><span class="num">23</span>Resolving disputes</h2>
+        <p>If a dispute comes up, we ask that you email <a href="mailto:hello@oneincomeplan.com">hello@oneincomeplan.com</a> first and give us thirty days to work it out informally. Most things end there.</p>
+        <p>If it cannot be resolved informally, the dispute will be settled by binding arbitration administered in the State of Michigan, or in small claims court where the claim qualifies. Any court proceeding that does go forward will take place in St. Joseph County, Michigan.</p>
+        <p><strong>Class action waiver.</strong> You and The One Income Plan each agree that any dispute will be brought individually, and not as a plaintiff or member of any class, collective, or representative action.</p>
+      </section>
+      <section class="s" id="s24">
+        <h2><span class="num">24</span>Changes to these Terms</h2>
+        <p>We may update these Terms from time to time as the business grows. The current version always lives on this page, with the date it was last updated at the top. Continuing to use the site or buy from us after a change means you accept the updated Terms.</p>
+      </section>
+      <section class="s" id="s25">
+        <h2><span class="num">25</span>The rest of the fine print</h2>
+        <p>If any part of these Terms is found to be unenforceable, the rest still stands. If we do not enforce a term straight away, we have not given up the right to enforce it later. These Terms, together with our Disclaimer and Privacy Policy, make up the whole agreement between us. You may not transfer your rights under these Terms to anyone else.</p>
+      </section>
+      <section class="s" id="s26">
+        <h2><span class="num">26</span>Getting in touch</h2>
+        <p>Questions about these Terms are welcome, always.</p>
+        <p><strong>Email:</strong> <a href="mailto:hello@oneincomeplan.com">hello@oneincomeplan.com</a> <strong>Mail:</strong> The One Income Plan, 64466 Norton Rd, Constantine, MI 49042</p>
+        <p>Thank you for being here, and for reading all the way to the bottom of a legal page. That says something about you.</p>
+      </section>
+      <p style="text-align:center;margin-top:3rem;font-family:'Caveat',cursive;font-size:1.5rem;color:var(--coral-deep);">The One Income Plan ◆ spend with intention, save with purpose</p>
+
+
+  <footer>
+    <div class="container">
+      <a href="/" class="brand-line">The One Income Plan</a>
+      <p class="tagline">spend with intention. save with purpose.</p>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="/start-here">Start Here</a>
+        <a href="/about">About</a>
+        <a href="/free-resources">Free Resources</a>
+        <a href="/membership">Membership</a>
+        <a href="/blog">Blog</a>
+        <a href="/contact">Contact</a>
+        <a href="/opt-in">Free Reality Check</a>
+      </nav>
+      <p class="legal">
+        © 2026 <span data-legal="name">Brooke Michelle Watrous</span>. All rights reserved.
+        &nbsp;·&nbsp;
+        <a href="/privacy-policy">Privacy</a> ·
+        <a href="/terms">Terms</a> ·
+        <a href="/disclaimer">Disclaimer</a> ·
+        <a href="/affiliate-disclosure">Affiliate Disclosure</a>
+      </p>
+    </div>
+  </footer>
+
+
+  <script>
+  /* =========================================================
+     FILL THESE IN ONCE. Every blank on the page reads from here.
+     Anything left unset keeps its visible [PLACEHOLDER] text so
+     you can see at a glance what is still missing.
+     ========================================================= */
+  var BUSINESS = {
+    name:      'Brooke Michelle Watrous',   /* legal entity name, e.g. a registered business name, if she forms one */
+    trading:   'The One Income Plan',
+    entity:    'a Michigan sole proprietorship',   /* e.g. an Ohio limited liability company */
+    address:   '64466 Norton Rd, Constantine, MI 49042',   /* mailing address for legal notices */
+    email:     'hello@oneincomeplan.com',   /* address for privacy and legal contact */
+    state:     'Michigan',   /* governing law, e.g. Ohio */
+    effective: 'August 12, 2026',
+    updated:   'October 26, 2026'
+  };
+
+  Object.keys(BUSINESS).forEach(function (k) {
+    if (!BUSINESS[k]) return;
+    document.querySelectorAll('[data-legal="' + k + '"]').forEach(function (el) {
+      el.textContent = BUSINESS[k];
+      el.removeAttribute('style');
+    });
+  });
+
+  /* mobile nav */
+  (function () {
+    var t = document.getElementById('navToggle'), l = document.getElementById('navLinks');
+    if (!t || !l) return;
+    t.addEventListener('click', function () {
+      var open = l.classList.toggle('open');
+      t.classList.toggle('open', open);
+      t.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    l.querySelectorAll('a').forEach(function (a) {
+      a.addEventListener('click', function () { l.classList.remove('open'); t.classList.remove('open'); });
+    });
+  })();
+  </script>

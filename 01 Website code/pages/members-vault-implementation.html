@@ -1,0 +1,678 @@
+<script>!function(){var MemberSpace=window.MemberSpace||{"subdomain":"purposefulpennies"};!function(d){var s=d.createElement("script");s.src="https://cdn.memberspace.com/scripts/widgets.js";var e=d.getElementsByTagName("script")[0];e.parentNode.insertBefore(s,e)}(document)}();</script>
+<!--
+  ============================================================
+  THE ONE INCOME PLAN  ·  VAULT SYSTEM 07  ·  WHAT TO DO FIRST   /members-vault-implementation
+  Showit + MemberSpace
+  ============================================================
+
+  WHAT THIS PAGE IS
+  One of the seven vault systems linked from /members-vault. It holds
+  the method itself, the printables for it (the same Google Doc and
+  Sheet links the Printables library uses), and the finish line.
+
+  MEMBERSPACE
+  Protected by the /members-* prefix rule. The slug MUST stay
+  members-vault-implementation. Rename it and the page goes public.
+
+  VIDEO
+  The video slot shows an honest "being recorded" card until
+  VIDEO_EMBED in the CONFIG block at the bottom is filled in.
+
+  FORMATTING RULE. Zero em dashes, zero en dashes. The separator is
+  the diamond glyph. Keep the SHOWIT OVERRIDE ARMOUR block.
+  ============================================================
+-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>What To Do First · The Vault · The One-Income Circle</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&amp;family=DM+Serif+Display&amp;display=swap" rel="stylesheet">
+  <style>
+
+    :root {
+      --deep-sage: #2E3E2F;
+      --sage: #5C6E47;
+      --sage-soft: #8B9E75;
+      --warm-tan: #C28954;
+      --warm-tan-dark: #A77246;
+      --cream: #FBF4D7;
+      --cream-warm: #F7ECC4;
+      --charcoal: #2A2A2A;
+      --soft-gray: #7E867D;
+      --light-sage: #DBE3CE;
+      --pale-tan: #EFE0C1;
+      --white: #FFFFFF;
+      --coral: #DD6B4E;
+      --coral-deep: #C25441;
+      --coral-soft: #F7D0BE;
+      --coral-blush: #FBE3D5;
+      --gold: #D4A83F;
+      --gold-soft: #EDD98D;
+      --gold-deep: #B8912E;
+      --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { font-size: 17px; scroll-behavior: smooth; }
+    @media (min-width: 720px) { html { font-size: 18px; } }
+    body {
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: 1.05rem; line-height: 1.66;
+      color: var(--charcoal); background: var(--cream);
+      -webkit-font-smoothing: antialiased; overflow-x: hidden;
+    }
+    .container { max-width: 1180px; margin: 0 auto; padding: 0 1.5rem; }
+    .narrow { max-width: 780px; margin: 0 auto; padding: 0 1.5rem; }
+    section { padding: 3rem 0; position: relative; }
+    @media (max-width: 700px) { section { padding: 2.25rem 0; } }
+    .script { font-family: 'Caveat', cursive; font-weight: 700; }
+    h1, h2, h3, h4 { font-family: Georgia, serif; color: var(--deep-sage); }
+    h1 { font-size: clamp(2.05rem, 4.8vw, 3.05rem); font-weight: bold; line-height: 1.08; letter-spacing: -0.01em; }
+    h2 { font-size: clamp(1.45rem, 3vw, 1.95rem); font-weight: bold; line-height: 1.18; }
+    h3 { font-size: 1.22rem; font-weight: bold; line-height: 1.3; }
+    h4 { font-size: 0.98rem; font-weight: bold; }
+    p { margin-bottom: 0.9rem; }
+    p:last-child { margin-bottom: 0; }
+    a { color: var(--coral-deep); }
+    .eyebrow {
+      font-size: 0.74rem; font-weight: bold; letter-spacing: 0.2em;
+      text-transform: uppercase; color: var(--warm-tan-dark);
+      display: inline-flex; align-items: center; gap: 0.7rem;
+    }
+    .eyebrow::before { content: ""; width: 24px; height: 1px; background: var(--warm-tan); }
+    .eyebrow-coral { color: var(--coral-deep); }
+    .eyebrow-coral::before { background: var(--coral); }
+    .eyebrow-cream { color: var(--coral-soft); }
+    .eyebrow-cream::before { background: var(--coral); }
+
+    /* ===== BUTTONS ===== */
+    .btn {
+      display: inline-flex; align-items: center; gap: 0.55rem;
+      background: var(--warm-tan); color: white; font-family: Georgia, serif;
+      font-size: 1rem; font-weight: bold; padding: 0.85rem 1.8rem;
+      border: none; border-radius: 999px; cursor: pointer; text-decoration: none;
+      transition: all 0.25s var(--ease); box-shadow: 0 3px 0 var(--warm-tan-dark);
+    }
+    .btn:hover { background: var(--warm-tan-dark); transform: translateY(-2px); box-shadow: 0 5px 0 var(--warm-tan-dark); color: white; }
+    .btn::after { content: "\2192"; transition: transform 0.25s var(--ease); }
+    .btn:hover::after { transform: translateX(3px); }
+    .btn-coral { background: var(--coral); box-shadow: 0 3px 0 var(--coral-deep); }
+    .btn-coral:hover { background: var(--coral-deep); box-shadow: 0 5px 0 var(--coral-deep); }
+    .btn-outline {
+      background: transparent; color: var(--warm-tan-dark); border: 2px solid var(--warm-tan);
+      padding: calc(0.85rem - 2px) calc(1.8rem - 2px); box-shadow: none;
+    }
+    .btn-outline:hover { background: var(--pale-tan); color: var(--warm-tan-dark); box-shadow: none; }
+    .btn-cream { background: var(--cream); color: var(--deep-sage); box-shadow: 0 3px 0 rgba(0,0,0,0.18); }
+    .btn-cream:hover { background: var(--cream-warm); color: var(--deep-sage); box-shadow: 0 5px 0 rgba(0,0,0,0.18); }
+    .btn-ghost { background: transparent; color: var(--cream); border: 2px solid var(--coral-soft); box-shadow: none; padding: calc(0.85rem - 2px) calc(1.8rem - 2px); }
+    .btn-ghost:hover { background: rgba(255,255,255,0.1); color: var(--cream); box-shadow: none; }
+    .btn-sm { font-size: 0.9rem; padding: 0.6rem 1.3rem; }
+
+    /* ===== MEMBER NAV ===== */
+    .mnav { background: var(--deep-sage); position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 12px rgba(46, 62, 47, 0.18); }
+    .mnav-inner {
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 1.5rem; padding: 0.85rem 1.5rem; max-width: 1280px; margin: 0 auto;
+    }
+    .mnav-logo {
+      font-family: Georgia, serif; font-size: 1.12rem; font-weight: bold;
+      color: var(--cream); text-decoration: none; display: flex; align-items: center;
+      gap: 0.5rem; white-space: nowrap;
+    }
+    .mnav-logo .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--coral); }
+    .mnav-links { display: flex; align-items: center; gap: 1.6rem; }
+    .mnav-links a {
+      color: var(--cream); text-decoration: none; font-size: 0.94rem; opacity: 0.88;
+      position: relative; padding-bottom: 2px; white-space: nowrap;
+    }
+    .mnav-links a::after {
+      content: ""; position: absolute; left: 0; right: 0; bottom: -3px; height: 2px;
+      background: var(--coral); transform: scaleX(0); transform-origin: left;
+      transition: transform 0.25s var(--ease); border-radius: 2px;
+    }
+    .mnav-links a:hover { opacity: 1; }
+    .mnav-links a:hover::after, .mnav-links a.current::after { transform: scaleX(1); }
+    .mnav-links a.current { opacity: 1; font-weight: bold; }
+    .mnav-account {
+      background: var(--coral); color: white !important; padding: 0.5rem 1.1rem;
+      border-radius: 999px; font-size: 0.86rem !important; font-weight: bold;
+      opacity: 1 !important; box-shadow: 0 2px 0 var(--coral-deep);
+    }
+    .mnav-account::after { display: none; }
+    .mnav-account:hover { background: var(--coral-deep); }
+    .mnav-toggle { display: none; background: none; border: none; cursor: pointer; padding: 0.4rem; }
+    .mnav-toggle span { display: block; width: 24px; height: 2px; background: var(--cream); margin: 5px 0; border-radius: 2px; }
+    @media (max-width: 1080px) {
+      .mnav-toggle { display: block; }
+      .mnav-links {
+        position: absolute; top: 100%; left: 0; right: 0; background: var(--deep-sage);
+        flex-direction: column; align-items: stretch; gap: 0; padding: 0 1.5rem;
+        max-height: 0; overflow: hidden;
+        transition: max-height 0.35s var(--ease), padding 0.35s var(--ease);
+      }
+      .mnav-links.open { max-height: 32rem; padding: 0.75rem 1.5rem 1.5rem; }
+      .mnav-links a { padding: 0.75rem 0; font-size: 1.02rem; }
+      .mnav-links a::after { display: none; }
+      .mnav-account { text-align: center; margin-top: 0.75rem; }
+    }
+
+    /* ===== SHOWIT OVERRIDE ARMOUR =====
+       Showit injects its own link colours over anything pasted into
+       Custom Head HTML, and it beat the logo rule on the live site: the
+       logo rendered dark on the dark nav and was effectively invisible.
+       The nav links happened to survive, but they are one template
+       change away from the same problem.
+
+       Every colour in the nav is therefore pinned here with high
+       specificity and !important. These are the same colours the
+       component already intended, nothing new. Do not remove this
+       block. If a nav element ever renders the wrong colour on Showit
+       again, add it here rather than editing the rules above. */
+    .mnav .mnav-logo,
+    .mnav .mnav-logo:link,
+    .mnav .mnav-logo:visited,
+    .mnav .mnav-logo:hover,
+    .mnav .mnav-logo:focus,
+    .mnav .mnav-logo:active,
+    .mnav .mnav-logo * { color: var(--cream) !important; }
+    .mnav .mnav-logo .dot { background: var(--coral) !important; }
+
+    .mnav .mnav-links a,
+    .mnav .mnav-links a:link,
+    .mnav .mnav-links a:visited,
+    .mnav .mnav-links a:hover,
+    .mnav .mnav-links a:active { color: var(--cream) !important; }
+
+    .mnav .mnav-links a.mnav-account,
+    .mnav .mnav-links a.mnav-account:link,
+    .mnav .mnav-links a.mnav-account:visited,
+    .mnav .mnav-links a.mnav-account:hover,
+    .mnav .mnav-links a.mnav-account:active { color: #FFFFFF !important; }
+    .mnav .mnav-toggle span { background: var(--cream) !important; }
+    .mnav .mnav-logo, .mnav .mnav-links a { text-decoration: none !important; }
+
+
+
+    /* ===== SYSTEM PAGE ===== */
+    .s-hero { background: var(--cream); padding: 2.5rem 0 3rem; }
+    .s-hero-grid { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 3rem; align-items: center; }
+    @media (max-width: 860px) { .s-hero-grid { grid-template-columns: 1fr; gap: 2rem; } }
+    .crumb { font-size: 0.85rem; color: var(--soft-gray); margin-bottom: 1rem; }
+    .crumb a { color: var(--soft-gray); }
+    .s-num { font-family: 'DM Serif Display', Georgia, serif; font-size: 3.4rem; line-height: 1; color: var(--coral); display: block; margin-bottom: 0.35rem; }
+    .s-hero .script.for { font-size: 1.5rem; color: var(--coral-deep); display: block; margin-bottom: 0.4rem; }
+    .s-hero h1 { margin-bottom: 0.9rem; }
+    .s-sub { font-size: 1.14rem; font-style: italic; color: var(--sage); max-width: 34rem; }
+    .s-meta { display: flex; flex-wrap: wrap; gap: 0.6rem; margin: 1.4rem 0 1.6rem; }
+    .s-meta span { background: white; border: 1px solid rgba(194,137,84,0.35); border-radius: 999px; padding: 0.35rem 0.9rem; font-size: 0.88rem; color: var(--deep-sage); }
+    .s-meta b { color: var(--coral-deep); }
+    .s-photo { border-radius: 18px; overflow: hidden; aspect-ratio: 4 / 5; box-shadow: 0 22px 50px rgba(46,62,47,0.16); position: relative; }
+    .s-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .s-photo .tag { position: absolute; left: 1rem; bottom: 1rem; background: var(--gold); color: var(--deep-sage); font-weight: bold; font-size: 0.82rem; padding: 0.45rem 0.9rem; border-radius: 999px; }
+
+    .s-why { background: var(--white); }
+    .why-card { display: grid; grid-template-columns: auto 1fr; gap: 1.5rem; align-items: start; max-width: 860px; margin: 0 auto; }
+    .why-mark { font-family: 'Caveat', cursive; font-size: 2.6rem; color: var(--coral); line-height: 1; }
+    .why-card h2 { margin-bottom: 0.8rem; }
+
+    .s-print { background: var(--light-sage); }
+    .s-head { text-align: center; max-width: 40rem; margin: 0 auto 2rem; }
+    .s-head h2 { margin-top: 0.6rem; }
+    .s-head p { margin-top: 0.6rem; color: var(--sage); font-style: italic; }
+    .print-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.25rem; }
+    .print-card { background: white; border-radius: 14px; padding: 1.5rem 1.4rem; display: flex; flex-direction: column; gap: 0.6rem; border-top: 4px solid var(--coral); }
+    .print-card.sheet { border-top-color: var(--gold); }
+    .print-card .kind { font-size: 0.68rem; font-weight: bold; letter-spacing: 0.18em; text-transform: uppercase; color: var(--warm-tan-dark); }
+    .print-card h3 { font-size: 1.08rem; }
+    .print-card p { font-size: 0.93rem; color: var(--charcoal); flex: 1; }
+    .print-card .btn { align-self: flex-start; font-size: 0.92rem; padding: 0.65rem 1.3rem; }
+    .print-note { text-align: center; font-size: 0.9rem; color: var(--sage); margin-top: 1.4rem; font-style: italic; }
+
+    .s-steps { background: var(--white); }
+    .steps { counter-reset: st; max-width: 820px; margin: 0 auto; display: grid; gap: 1rem; }
+    .step-row { display: grid; grid-template-columns: 3.2rem 1fr; gap: 1.1rem; background: var(--cream); border-radius: 14px; padding: 1.35rem 1.4rem; }
+    .step-row .n { font-family: 'DM Serif Display', Georgia, serif; font-size: 2.1rem; color: var(--coral); line-height: 1; }
+    .step-row h3 { margin-bottom: 0.35rem; }
+    .step-row p { font-size: 0.98rem; }
+    .step-row .time { display: inline-block; font-size: 0.78rem; font-weight: bold; color: var(--sage); letter-spacing: 0.06em; margin-top: 0.45rem; }
+
+    .s-extra { background: var(--cream-warm); }
+    .s-extra.alt { background: var(--white); }
+    .panel-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.1rem; }
+    .panel { background: white; border-radius: 14px; padding: 1.35rem 1.35rem; }
+    .s-extra.alt .panel { background: var(--cream); }
+    .panel h3 { font-size: 1.05rem; margin-bottom: 0.45rem; }
+    .panel .lbl { font-size: 0.68rem; font-weight: bold; letter-spacing: 0.16em; text-transform: uppercase; color: var(--coral-deep); display: block; margin-bottom: 0.35rem; }
+    .panel p, .panel li { font-size: 0.93rem; }
+    .panel ul { list-style: none; margin-top: 0.4rem; }
+    .panel li { position: relative; padding-left: 1.1rem; margin-bottom: 0.35rem; }
+    .panel li::before { content: "\25C6"; position: absolute; left: 0; top: 0.32rem; color: var(--coral); font-size: 0.55rem; }
+    .print-this { text-align: center; margin-top: 1.6rem; }
+
+    .recipe-filter { display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; margin-bottom: 1.5rem; }
+    .recipe-filter button { font-family: Georgia, serif; font-size: 0.88rem; border: 1.5px solid var(--warm-tan); background: white; color: var(--warm-tan-dark); padding: 0.45rem 1rem; border-radius: 999px; cursor: pointer; }
+    .recipe-filter button.on { background: var(--deep-sage); color: var(--cream); border-color: var(--deep-sage); }
+    .recipe-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 0.9rem; }
+    .recipe { background: white; border-radius: 12px; padding: 1.05rem 1.1rem; border-left: 4px solid var(--gold); }
+    .recipe h4 { font-size: 0.98rem; color: var(--deep-sage); margin-bottom: 0.25rem; }
+    .recipe .base { font-size: 0.7rem; font-weight: bold; letter-spacing: 0.14em; text-transform: uppercase; color: var(--warm-tan-dark); display: block; margin-bottom: 0.3rem; }
+    .recipe p { font-size: 0.88rem; margin: 0; }
+    .recipe.hide { display: none; }
+
+    .ruled { background: white; border-radius: 14px; padding: 1.25rem; overflow-x: auto; }
+    .ruled-row { display: grid; grid-template-columns: 1.6fr 1fr 1fr 1fr; gap: 0.6rem; border-bottom: 1px solid rgba(126,134,125,0.3); padding: 0.7rem 0.3rem; font-size: 0.9rem; min-width: 520px; }
+    .ruled-row.head { font-weight: bold; color: var(--deep-sage); border-bottom: 2px solid var(--coral); }
+
+    .s-video { background: var(--deep-sage); color: var(--cream); }
+    .video-box { max-width: 820px; margin: 0 auto; aspect-ratio: 16 / 9; border-radius: 16px; border: 2px dashed rgba(247,208,190,0.45); display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 2rem; position: relative; overflow: hidden; }
+    .video-box iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+    .video-box .v-tag { font-size: 0.7rem; font-weight: bold; letter-spacing: 0.18em; text-transform: uppercase; color: var(--coral-soft); margin-bottom: 0.6rem; }
+    .video-box h3 { color: var(--cream); font-size: 1.3rem; margin-bottom: 0.5rem; }
+    .video-box p { color: var(--light-sage); font-style: italic; max-width: 30rem; font-size: 0.95rem; }
+    @media (max-width: 600px) { .video-box { aspect-ratio: auto; min-height: 14rem; } }
+
+    .s-done { background: var(--coral-blush); }
+    .done-card { max-width: 820px; margin: 0 auto; display: grid; grid-template-columns: auto 1fr; gap: 1.4rem; align-items: center; }
+    .done-badge { width: 5.2rem; height: 5.2rem; border-radius: 50%; background: var(--coral); color: white; display: flex; align-items: center; justify-content: center; text-align: center; font-family: 'Caveat', cursive; font-size: 1.35rem; line-height: 1; box-shadow: 0 4px 0 var(--coral-deep); }
+    .done-card h2 { margin-bottom: 0.45rem; }
+    @media (max-width: 600px) { .done-card, .why-card { grid-template-columns: 1fr; } }
+
+    .s-faq { background: var(--white); }
+    .faq { max-width: 820px; margin: 0 auto; }
+    .faq details { border-bottom: 1px solid rgba(126,134,125,0.3); padding: 1rem 0.2rem; }
+    .faq summary { cursor: pointer; font-weight: bold; color: var(--deep-sage); list-style: none; display: flex; justify-content: space-between; gap: 1rem; }
+    .faq summary::-webkit-details-marker { display: none; }
+    .faq summary::after { content: "+"; color: var(--coral); font-size: 1.3rem; line-height: 1; }
+    .faq details[open] summary::after { content: "\2212"; }
+    .faq details p { margin-top: 0.7rem; font-size: 0.97rem; }
+
+    .next { background: var(--deep-sage); color: var(--cream); text-align: center; padding: 3rem 0; }
+    .next h2 { color: var(--cream); margin: 0.85rem 0 0.9rem; }
+    .next p { color: var(--cream); opacity: 0.92; max-width: 34rem; margin: 0 auto 1.5rem; }
+    .next-row { display: flex; flex-wrap: wrap; gap: 0.9rem; justify-content: center; }
+
+    @media print {
+      .mnav, footer, .s-video, .next, .btn, .recipe-filter, .skip-link { display: none !important; }
+      body { background: white; }
+      section { padding: 1rem 0; }
+      .fade-in { opacity: 1 !important; transform: none !important; }
+      .s-photo { display: none; }
+      .s-hero-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ===== FOOTER ===== */
+    footer { background: var(--deep-sage); color: var(--cream); padding: 2.25rem 0 2rem; text-align: center; border-top: 1px solid rgba(221, 107, 78, 0.22); }
+    footer .diamond { color: var(--coral); font-size: 0.8rem; letter-spacing: 1.1em; padding-left: 1.1em; opacity: 0.7; margin-bottom: 1.25rem; }
+    footer .fnav { display: flex; justify-content: center; flex-wrap: wrap; gap: 1rem 1.75rem; margin-bottom: 1.25rem; }
+    footer .fnav a { color: var(--cream); opacity: 0.85; text-decoration: none; font-size: 0.9rem; }
+    footer .fnav a:hover { opacity: 1; color: var(--coral-soft); }
+    footer .legal { font-size: 0.8rem; opacity: 0.6; }
+    footer .legal a { color: var(--cream); opacity: 0.85; text-decoration: none; margin: 0 0.35rem; }
+
+    .fade-in { opacity: 0; transform: translateY(16px); transition: opacity 0.6s var(--ease), transform 0.6s var(--ease); }
+    .fade-in.visible { opacity: 1; transform: none; }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+      html { scroll-behavior: auto; }
+      .fade-in { opacity: 1; transform: none; }
+    }
+    :focus-visible { outline: 3px solid var(--coral); outline-offset: 3px; }
+    .skip-link { position: absolute; left: -9999px; background: var(--coral); color: white; padding: 0.7rem 1.2rem; z-index: 200; }
+    .skip-link:focus { left: 0; }
+  /* ====== BUTTON TEXT LOCK ======
+     Showit makes every link inherit its section's text colour, which turned
+     button text dark, or invisible on cream buttons. These rules win.
+     Coral and tan buttons: white text. Cream, white and outline buttons: black text.
+     Keep this block on every page. Zero em dashes, zero en dashes. */
+  a.btn, a.btn:hover, a.btn:focus, a.btn:visited { color: #FFFFFF !important; }
+  a.btn.btn-cream, a.btn.btn-cream:hover, a.btn.btn-cream:focus,
+  a.btn.btn-outline, a.btn.btn-outline:hover, a.btn.btn-outline:focus,
+  button.btn.btn-outline, button.btn.btn-outline:hover,
+  .fork-card.primary a.btn, .fork-card.primary a.btn:hover { color: #1A1A1A !important; }
+  .contact-form a.btn.btn-outline, .contact-form a.btn.btn-outline:hover { color: #FFFFFF !important; }
+  a.btn.btn-ghost, a.btn.btn-ghost:hover, a.btn.btn-ghost:focus { color: inherit !important; }
+  </style>
+
+
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <!-- ==================== MEMBER NAV ==================== -->
+  <nav class="mnav">
+    <div class="mnav-inner">
+      <a href="/members" class="mnav-logo">
+        <span class="dot"></span>
+        The One-Income Circle
+      </a>
+      <button class="mnav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false" aria-controls="mnavLinks">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="mnav-links" id="mnavLinks">
+        <a href="/members">Home</a>
+        <a href="/members-vault" class="current" aria-current="page">The Vault</a>
+        <a href="/members-library">Printables</a>
+        <a href="/members-sessions">Live Sessions</a>
+        <a href="/members-circle">The Circle</a>
+        <a href="/members-ask-brooke" class="">Ask Brooke</a>
+        <a href="/members-account" class="mnav-account">My account</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main">
+
+  <!-- ==================== HERO ==================== -->
+  <section class="s-hero">
+    <div class="container s-hero-grid">
+      <div>
+        <p class="crumb"><a href="/members">Member home</a> ◆ <a href="/members-vault">The Vault</a> ◆ System 07</p>
+        <span class="s-num">07</span>
+        <span class="script for">for: too much at once</span>
+        <h1>What To Do First</h1>
+        <p class="s-sub">The order to add things in, so you never add two at once. Come back to this whenever a month gets away from you.</p>
+        <div class="s-meta">
+          <span><b>10 min</b> to read</span>
+          <span><b>2</b> printables</span>
+          <span><b>1</b> tour</span>
+        </div>
+        <a href="#print" class="btn btn-coral">Get the two pages</a>
+      </div>
+      <div class="s-photo fade-in">
+        <img src="https://raw.githubusercontent.com/genasbury12/blb-site/claude/brookes-images-folder-sf3xp4/brooke-site-images/membership-product.jpg" alt="A stack of One Income Plan printables on the kitchen table with a pen and a small plant" loading="lazy">
+        <span class="tag">System 07</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== WHY ==================== -->
+  <section class="s-why">
+    <div class="container">
+      <div class="why-card fade-in">
+        <span class="why-mark" aria-hidden="true">◆</span>
+        <div>
+          <h2>The most common way to fail at this is to start everything at once.</h2>
+          <p>I see it every time. A new member opens all seven systems on a Saturday, prints forty pages, and by the following Thursday has done none of them. Not because she is not capable, but because nobody can change seven things at once.</p>
+          <p>This system is the order. One thing a week, in a sequence that builds on itself. And for the weeks when life goes sideways, the fifteen minute path, so you never fall all the way back to the start.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PRINT ==================== -->
+  <section class="s-print" id="print">
+    <div class="container">
+      <div class="s-head fade-in">
+        <span class="eyebrow eyebrow-coral">Print these first</span>
+        <h2>Two pages to keep you on track.</h2>
+        <p>The roadmap goes on the fridge. The checklist is a live spreadsheet you update as you go.</p>
+      </div>
+      <div class="print-grid">
+          <div class="print-card fade-in">
+            <span class="kind">Printable ◆ 1 page</span>
+            <h3>The Four Week Roadmap</h3>
+            <p>One system a week, in order, so you never add two at once.</p>
+            <a href="https://docs.google.com/document/d/1831bWMfbIzAhrwCvnvtXtmm0FK19arOAvHaMXSIdtcY/export?format=pdf" class="btn btn-coral" target="_blank" rel="noopener">Open and print</a>
+          </div>
+          <div class="print-card sheet fade-in">
+            <span class="kind">Live spreadsheet</span>
+            <h3>The Implementation Checklist</h3>
+            <p>What is running, what is next, and what you are deliberately not doing yet.</p>
+            <a href="https://docs.google.com/spreadsheets/d/1kO-u4coiWOnV82Lq3arKeT_Mq9eDQDroY_ASuwIhoV4/copy" class="btn btn-outline" target="_blank" rel="noopener">Make my copy</a>
+          </div>
+      </div>
+      <p class="print-note">Spreadsheets open as your own copy, so nothing you type is ever seen by anyone else.</p>
+    </div>
+  </section>
+
+  <!-- ==================== HOW ==================== -->
+  <section class="s-steps">
+    <div class="container">
+      <div class="s-head fade-in">
+        <span class="eyebrow">How to do it</span>
+        <h2>How to add one system at a time.</h2>
+        <p>The same five steps for every system in the vault.</p>
+      </div>
+      <div class="steps">
+          <div class="step-row fade-in">
+            <span class="n">1</span>
+            <div>
+              <h3>Pick one.</h3>
+              <p>The next one on the roadmap, or the one Quick Start picked for you. Write it at the top of the checklist.</p>
+            </div>
+          </div>
+          <div class="step-row fade-in">
+            <span class="n">2</span>
+            <div>
+              <h3>Print only its pages.</h3>
+              <p>Not the whole library. Just the pages for this one system. Less paper on the counter means more of it gets used.</p>
+            </div>
+          </div>
+          <div class="step-row fade-in">
+            <span class="n">3</span>
+            <div>
+              <h3>Use it for one full payday or one full week.</h3>
+              <p>That is the definition of done. Not read, not understood. Used.</p>
+            </div>
+          </div>
+          <div class="step-row fade-in">
+            <span class="n">4</span>
+            <div>
+              <h3>Mark it as running.</h3>
+              <p>Move it to the running column on the checklist. Running means it happens without you having to remember to do it.</p>
+            </div>
+          </div>
+          <div class="step-row fade-in">
+            <span class="n">5</span>
+            <div>
+              <h3>Then, and only then, add the next.</h3>
+              <p>If the last one has slipped, go back to it first. There is no prize for speed in here.</p>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="s-extra">
+    <div class="container">
+      <div class="s-head fade-in">
+        <span class="eyebrow">The four week roadmap</span>
+        <h2>Your first month, one system a week.</h2>
+        <p>Home rhythms and the mindset work come after, once these four feel normal.</p>
+      </div>
+      <div class="panel-grid">
+        <div class="panel fade-in"><span class="lbl">Week one</span><h3>The budget</h3><p>Do the payday routine on your next payday. Fill in the Bill Due Date Calendar once. That is the whole week.</p><p><a href="/members-vault-budget">Open the system</a></p></div>
+        <div class="panel fade-in"><span class="lbl">Week two</span><h3>One sinking fund</h3><p>Open your first fund and add it to the payday page. Just one.</p><p><a href="/members-vault-sinking-funds">Open the system</a></p></div>
+        <div class="panel fade-in"><span class="lbl">Week three</span><h3>Sunday meal planning</h3><p>Plan seven dinners from what is in the house. Put the plan on the fridge.</p><p><a href="/members-vault-meals">Open the system</a></p></div>
+        <div class="panel fade-in"><span class="lbl">Week four</span><h3>Your grocery number</h3><p>Set the number, write it on the list, keep a running total in the store.</p><p><a href="/members-vault-groceries">Open the system</a></p></div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="s-extra alt">
+    <div class="container">
+      <div class="s-head fade-in">
+        <span class="eyebrow">The fifteen minute path</span>
+        <h2>For weeks that go sideways.</h2>
+        <p>Sick kids, a hard month, a surprise bill. When everything slips, do only these three things and let the rest wait.</p>
+      </div>
+      <div class="panel-grid">
+        <div class="panel fade-in"><span class="lbl">5 minutes</span><h3>The payday page</h3><p>Even a messy one. Bills first, then groceries, then nothing else. This one page protects everything.</p></div>
+        <div class="panel fade-in"><span class="lbl">5 minutes</span><h3>One emergency dinner plan</h3><p>Three pantry dinners written on the fridge. Pasta, eggs, soup. That is enough.</p></div>
+        <div class="panel fade-in"><span class="lbl">5 minutes</span><h3>One sentence on a wins page</h3><p>Anything at all. You did the fifteen minutes in a hard week. That is the win.</p></div>
+      </div>
+      <p class="print-this"><a href="#" class="btn btn-outline js-print-page">Print this page</a></p>
+    </div>
+  </section>
+
+
+  <section class="s-extra">
+    <div class="container">
+      <div class="s-head fade-in">
+        <span class="eyebrow">A short tour</span>
+        <h2>Where everything lives.</h2>
+        <p>Every room of the membership, and what it is for.</p>
+      </div>
+      <div class="panel-grid">
+        <div class="panel fade-in"><h3><a href="/members">Member home</a></h3><p>Your starting point. This month’s focus, the next live session, and recent Circle activity.</p></div>
+        <div class="panel fade-in"><h3><a href="/members-quick-start">Quick Start</a></h3><p>For your first week. It picks your starting system for you.</p></div>
+        <div class="panel fade-in"><h3><a href="/members-this-month">This Month</a></h3><p>One focus each month, with a short training and the pages to go with it.</p></div>
+        <div class="panel fade-in"><h3><a href="/members-vault">The Vault</a></h3><p>All seven systems, in the order to do them.</p></div>
+        <div class="panel fade-in"><h3><a href="/members-library">Printables</a></h3><p>Every page in the membership, searchable, in one place.</p></div>
+        <div class="panel fade-in"><h3><a href="/members-sessions">Live Sessions</a></h3><p>The monthly money reset, the date, the link and the replays.</p></div>
+        <div class="panel fade-in"><h3><a href="/members-circle">The Circle</a></h3><p>The private community, where the wins thread lives.</p></div>
+        <div class="panel fade-in"><h3><a href="/members-ask-brooke">Ask Brooke</a></h3><p>Bring me the real numbers. Private, anonymous, or for the live session.</p></div>
+        <div class="panel fade-in"><h3><a href="/members-account">My account</a></h3><p>Your plan, your renewal date, your details.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== VIDEO ==================== -->
+  <section class="s-video">
+    <div class="container">
+      <div class="video-box fade-in" id="videoBox">
+        <span class="v-tag">The tour</span>
+        <h3>A short tour of the membership</h3>
+        <p>Brooke is recording this one. Until it is up, everything you need is on this page, written out in the steps above.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== DONE WHEN ==================== -->
+  <section class="s-done">
+    <div class="container">
+      <div class="done-card fade-in">
+        <div class="done-badge">done<br>when</div>
+        <div>
+          <h2>Four systems are marked running on your checklist.</h2>
+          <p>Budget, one sinking fund, Sunday meal planning and your grocery number. When those four run on their own, add Simple Home Rhythms and Money Is a Tool at whatever pace suits your house.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== WHEN IT SLIPS ==================== -->
+  <section class="s-faq">
+    <div class="container">
+      <div class="s-head fade-in">
+        <span class="eyebrow">When it slips</span>
+        <h2>The questions everyone asks about this one.</h2>
+      </div>
+      <div class="faq fade-in">
+          <details>
+            <summary>I already started several systems at once. Should I stop?</summary>
+            <p>Pick the one that is working best and keep it. Pause the rest without guilt. They will be here, and they will go better one at a time.</p>
+          </details>
+          <details>
+            <summary>Can I do them in a different order?</summary>
+            <p>Yes. The order suits most families, but if groceries are the fire in your house, start there. The rule is one at a time, not this exact sequence.</p>
+          </details>
+          <details>
+            <summary>A month got away from me and I stopped everything.</summary>
+            <p>Do the fifteen minute path this week. Next payday, pick up the budget system again. Nothing in here expires and nobody is keeping score.</p>
+          </details>
+          <details>
+            <summary>How long until all seven are running?</summary>
+            <p>Most families take two to four months. That is not slow. That is how it sticks.</p>
+          </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== NEXT ==================== -->
+  <section class="next">
+    <div class="container">
+      <span class="eyebrow eyebrow-cream">Back to the start</span>
+      <h2>Head back to the vault</h2>
+      <p>Pick the next system on your checklist, or come to the live session and we will pick it together.</p>
+      <div class="next-row">
+        <a href="/members-vault" class="btn btn-cream">Back to the vault</a>
+        <a href="/members-ask-brooke" class="btn btn-ghost">Ask Brooke about this one</a>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="diamond">◆ ◆ ◆</div>
+      <nav class="fnav" aria-label="Member footer">
+        <a href="/members">Member home</a>
+        <a href="/members-vault">The Vault</a>
+        <a href="/members-quick-start">Quick Start</a>
+        <a href="/members-library">Printables</a>
+        <a href="/members-sessions">Live Sessions</a>
+        <a href="/members-account">My account</a>
+        <a href="/contact">Help</a>
+      </nav>
+      <p class="legal">
+        © 2026 The One Income Plan by Frugal Home Lover. Member content, please keep it in the family.
+        &nbsp;·&nbsp;
+        <a href="/terms">Terms</a> ·
+        <a href="/privacy-policy">Privacy</a>
+      </p>
+    </div>
+  </footer>
+
+
+  <script>
+    /* ============================================================
+       CONFIG
+       Paste the embed URL for this system's video when it is recorded.
+       Unlisted Vimeo or YouTube, or a MemberSpace hosted video.
+       Leave empty to keep the honest "being recorded" card.
+       ============================================================ */
+    const VIDEO_EMBED = '';
+    const VIDEO_TITLE = 'A short tour of the membership';
+
+    /* ===== VIDEO ===== */
+    (function () {
+      if (!VIDEO_EMBED) return;
+      const box = document.getElementById('videoBox');
+      if (!box) return;
+      box.innerHTML = '<iframe src="' + VIDEO_EMBED + '" title="' + VIDEO_TITLE + '" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>';
+      box.style.border = 'none';
+    })();
+
+    /* ===== PRINT THIS PAGE BUTTONS ===== */
+    document.querySelectorAll('.js-print-page').forEach(function (b) {
+      b.addEventListener('click', function (e) { e.preventDefault(); window.print(); });
+    });
+
+    /* ===== RECIPE FILTER (meals page only) ===== */
+    (function () {
+      const bar = document.getElementById('recipeFilter');
+      if (!bar) return;
+      const btns = Array.prototype.slice.call(bar.querySelectorAll('button'));
+      const cards = Array.prototype.slice.call(document.querySelectorAll('.recipe'));
+      btns.forEach(function (b) {
+        b.addEventListener('click', function () {
+          btns.forEach(function (x) { x.classList.toggle('on', x === b); x.setAttribute('aria-pressed', String(x === b)); });
+          const k = b.dataset.base;
+          cards.forEach(function (c) { c.classList.toggle('hide', k !== 'all' && c.dataset.base !== k); });
+        });
+      });
+    })();
+
+    /* ===== MOBILE NAV ===== */
+    (function () {
+      const t = document.getElementById('navToggle');
+      const l = document.getElementById('mnavLinks');
+      t.addEventListener('click', function () {
+        const open = l.classList.toggle('open');
+        t.setAttribute('aria-expanded', String(open));
+      });
+    })();
+
+    /* ===== FADE-IN ===== */
+    (function () {
+      const obs = new IntersectionObserver(function (entries) {
+        entries.forEach(function (en) {
+          if (en.isIntersecting) { en.target.classList.add('visible'); obs.unobserve(en.target); }
+        });
+      }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+      document.querySelectorAll('.fade-in').forEach(function (el) { obs.observe(el); });
+    })();
+  </script>
